@@ -118,7 +118,9 @@ table {
 /* Header Css */
 
 header{
-    background: #fff;
+    /* background: #fff; */
+
+    background: transparent;
 }
 
 .main_navbar{
@@ -677,7 +679,7 @@ footer{
 /* Textile Area */
 
 .textile_banner_area{
-    height: 70vh;
+    /* height: 120vh; */
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -690,6 +692,235 @@ footer{
     -webkit-box-align: center;
     align-items: center;
 }
+
+/* Left Crushing Animation */
+
+.reel_01_anim{
+    position: absolute;
+    top: 200px;
+    left: 0;
+}
+
+.reel_01_anim .left-bottle-crush{
+    width: 60%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.65s ease-in-out all;
+}
+
+.reel_01_anim .left-bottle-crush.show_left_bottle_crush{
+    opacity: 1;
+    visibility: visible;
+}
+
+.reel_02_anim .top-bottle-crush{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.65s ease-in-out all;
+}
+
+.reel_02_anim .top-bottle-crush.show_top_bottle_crush{
+    opacity: 1;
+    visibility: visible;
+}
+
+.reel_03_anim .right-bottle-crush{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.65s ease-in-out all;
+}
+
+.reel_03_anim .right-bottle-crush.show_right_bottle_crush{
+    opacity: 1;
+    visibility: visible;
+}
+
+.reel_01_anim img.red_thread{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.65s ease-in-out all;
+}
+
+.reel_01_anim img.red_thread.show_red_thread{
+    opacity: 1;
+    visibility: visible;
+}
+
+.reel_02_anim img.orange_thread{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.65s ease-in-out all;
+}
+
+.reel_02_anim img.orange_thread.show_orange_thread{
+    opacity: 1;
+    visibility: visible;
+}
+
+.reel_03_anim img.purple_thread{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.65s ease-in-out all;
+}
+
+.reel_03_anim img.purple_thread.show_purple_thread{
+    opacity: 1;
+    visibility: visible;
+}
+
+.reel_01_anim .thread-02,
+.reel_02_anim .thread-03,
+.reel_03_anim .thread-01{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.65s ease-in-out all;
+}
+
+.reel_01_anim .thread-02.show_thread_02{
+    opacity: 1;
+    visibility: visible;
+}
+
+.reel_02_anim .thread-03.show_thread_03{
+    opacity: 1;
+    visibility: visible;
+}
+
+.reel_03_anim .thread-01.show_thread_01{
+    opacity: 1;
+    visibility: visible;
+}
+
+.reel_01_anim img.red_thread{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(40%, 40%);
+    width: 20%;
+}
+
+.reel_01_anim .thread-02{
+    position: relative;
+    bottom: -140px;
+    right: -50px;
+    z-index: 2;
+}
+
+
+/* Top Crushing animation */
+
+.reel_02_anim{
+    position: absolute;
+    top: 0;
+}
+
+.reel_02_anim img{
+    display: block;
+}
+
+.reel_02_anim img.top-bottle-crush{
+    margin-left: auto;
+    z-index: -1;
+    position: relative;
+}
+
+.reel_02_anim img.orange_thread{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-7%,15%);
+}
+
+/* Right Crushing Animation */
+
+.reel_03_anim{
+    position: absolute;
+    right: 0;
+    top: 350px;
+}
+
+.reel_03_anim .right-bottle-crush{
+    width: 70%;
+    position: relative;
+    right: -81px;
+}
+
+.reel_03_anim .thread-02{
+    position: relative;
+    z-index: -1;
+    left: 0px;
+    top: -30px;
+}
+
+.reel_03_anim img.purple_thread{
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    transform: translate(-50%, 55%);
+    z-index: -2;
+}
+
+.reel_01_anim .red_vector{
+    position: absolute;
+    bottom: -125%;
+    right: 85px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.65s ease-in-out all;
+}
+
+.reel_01_anim .red_vector.show_red_vector{
+    opacity: 1;
+    visibility: visible;
+}
+
+.reel_02_anim .orange_vector{
+    position: absolute;
+    top: 90%;
+    right: 15%;
+    z-index: -2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.65s ease-in-out all;
+}
+
+.reel_02_anim .orange_vector.show_orange_vector{
+    opacity: 1;
+    visibility: visible;
+}
+
+.reel_03_anim .purple_vector{
+    position: absolute;
+    top: 70%;
+    left: -7%;
+    z-index: -2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.65s ease-in-out all;
+}
+
+.reel_03_anim .purple_vector.show_purple_vector{
+    opacity: 1;
+    visibility: visible;
+}
+
+.marquee{
+    position: absolute;
+    width: 100%;
+    font-size: 150px;
+    font-weight: 700;
+    color: #d5d5d5;
+    opacity: 0.35;
+}
+
+.marquee_one{
+    top: 100px;
+}
+
+.marquee_two{
+    top: 450px;
+}
+
 
 .textile_banner_area h2{
     text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
@@ -919,4 +1150,39 @@ footer{
 .world_innovation_video video{
     display: block;
     margin-top: 45px;
+}
+
+/* next_generation_area */
+
+.next_generation_area{
+    position: relative;
+    margin-top: 465px;
+    z-index: 2;
+}
+
+.next_gen_subtitle{
+    color: #fff;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+}
+
+.next_gen_title{
+    font-size: 150px;
+    font-weight: 700;
+    /* line-height: 200px; */
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+.next_gen_title span{
+    background-image: url('../img/home_stats_bg.png');
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
 }
