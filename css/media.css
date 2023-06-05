@@ -1,0 +1,20 @@
+@media (min-width: 1480px){
+    .content_container{
+        max-width: 1366px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1480px){
+    .three_r_txt .bold_text_area h2:nth-child(2){
+        text-align: unset;
+        margin-left: 65px;
+    }
+}
+
+@media(max-width: 991px){
+    .petopoly_area{
+        margin-left: unset;
+        margin: 0 auto;
+    }
+}

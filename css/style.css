@@ -119,7 +119,8 @@ table {
 
 header{
     /* background: #fff; */
-
+    position: relative;
+    z-index: 3;
     background: transparent;
 }
 
@@ -239,7 +240,7 @@ header{
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translateY(-50%);
+    transform: translateY(-60%);
 }
 
 .inner_about_area .left_about_area .semibold_text_area h2{
@@ -1185,4 +1186,98 @@ footer{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-font-smoothing: antialiased;
+}
+
+.three_r_title{
+    text-transform: uppercase;
+}
+
+.three_r_txt .bold_text_area h2{
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    font-weight: 700;
+    color: #fff;
+    font-size: 100px;
+    line-height: 100px;
+    opacity: 0.1;
+}
+
+.three_r_txt{
+    position: relative;
+    overflow: hidden;
+}
+
+.three_r_txt .bold_text_area h2:nth-child(2){
+    text-align: right;
+}
+
+.three_r_txt .semibold_text_area{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.three_r_txt .semibold_text_area h2{
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 700;
+}
+
+.three_r_txt .semibold_text_area h2:nth-child(2){
+    margin-left: 50px;
+}
+
+.petopoly_area{
+    margin-left: auto;
+    width: fit-content;
+}
+
+.petopoly_area .readmorebtn{
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+.petopoly_area .readmorebtn span{
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.petopoly_area .readmorebtn svg{
+    color: var(--red-font);
+    font-size: 30px;
+    margin-top: 2px;
+}
+
+.petopoly_txt{
+    max-width: 255px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.petopoly_txt h2{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #388e74;
+}
+
+.petopoly_txt p{
+    font-size: 13px;
+    color: #969696;
+    line-height: 16px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.petopoly_txt p .green_txt{
+    color: #388e74;
+}
+
+.petopoly_txt p sup{
+    font-size: 11px;
 }
