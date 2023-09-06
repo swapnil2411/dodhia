@@ -2,6 +2,19 @@ $(window).ready(function(){
     new WOW().init();
 })
 
+$(window).scroll(function(){
+    let sticky = $('header'),
+    scroll = $(window).scrollTop();
+
+    if (scroll >= 100){
+        sticky.addClass('sticky');
+    }else {
+        sticky.removeClass('sticky');
+    }
+});
+
+
+
 $(document).ready(function(){
     
 
@@ -48,7 +61,7 @@ $(document).ready(function(){
     
     $('.team_leader_carousel').owlCarousel({
         loop:true,
-        margin:40,
+        margin:60,
         nav:false,
         slideBy: 1,
         dots: true,
@@ -73,6 +86,7 @@ $(document).ready(function(){
         slideBy: 1,
         dots: true,
         dotsEach: true,
+        items:4,
         responsive:{
             0:{
                 items:1
@@ -106,54 +120,26 @@ $(document).ready(function(){
         }
     })
 
-
-    setTimeout(() => {
-        $('.reel_01_anim .left-bottle-crush').addClass('show_left_bottle_crush')
-    }, 1000);
-
-    setTimeout(() => {
-        $('.reel_02_anim .top-bottle-crush').addClass('show_top_bottle_crush')
-    }, 1000);
+    $('.open_market_list').on('click', function(){
+        $('.market_loction_world').addClass('open_market_location');
+    })
     
-    setTimeout(() => {
-        $('.reel_03_anim .right-bottle-crush').addClass('show_right_bottle_crush')
-    }, 1000);
+    $('.close_market_map').on('click', function(){
+        $('.market_loction_world').removeClass('open_market_location');
+    })
 
-    setTimeout(() => {
-        $('.reel_01_anim img.red_thread').addClass('show_red_thread')
-    }, 2000);
-
-    setTimeout(() => {
-        $('.reel_02_anim img.orange_thread').addClass('show_orange_thread')
-    }, 2000);
-
-    setTimeout(() => {
-        $('.reel_03_anim img.purple_thread').addClass('show_purple_thread')
-    }, 2000);
-
-    setTimeout(() => {
-        $('.reel_01_anim .thread-02').addClass('show_thread_02')
-    }, 3000);
-
-    setTimeout(() => {
-        $('.reel_02_anim .thread-03').addClass('show_thread_03')
-    }, 3000);
-
-    setTimeout(() => {
-        $('.reel_03_anim .thread-01').addClass('show_thread_01')
-    }, 3000);
-
-    setTimeout(() => {
-        $('.reel_01_anim .red_vector').addClass('show_red_vector')
-    }, 4000);
-
-    setTimeout(() => {
-        $('.reel_02_anim .orange_vector').addClass('show_orange_vector')
-    }, 4000);
-
-    setTimeout(() => {
-        $('.reel_03_anim .purple_vector').addClass('show_purple_vector')
-    }, 4000);
+    $('.left_product_list .menu div').click(function () {
+        var panelToShow = $(this).attr('rel');
+        // alert(panelToShow)
+        $(this).addClass('active').siblings().removeClass('active')
+    
+        $('.right_product_desc .product_desc_panel.active').fadeOut(600, function () {
+            $(this).removeClass('active');
+            $('#' + panelToShow).fadeIn(600, function () {
+                $(this).addClass('active');
+            })
+        })
+    })
 
     $('.count-up').countUp({
         'time': 2000,
