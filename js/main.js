@@ -85,7 +85,7 @@ $(document).ready(function(){
         nav:false,
         slideBy: 1,
         dots: true,
-        dotsEach: true,
+        // dotsEach: true,
         items:4,
         responsive:{
             0:{
@@ -106,7 +106,7 @@ $(document).ready(function(){
         nav:false,
         slideBy: 1,
         dots: true,
-        dotsEach: true,
+        // dotsEach: true,
         responsive:{
             0:{
                 items:1
@@ -121,7 +121,8 @@ $(document).ready(function(){
     })
 
     $('.open_market_list').on('click', function(){
-        $('.market_loction_world').addClass('open_market_location');
+        // $('.market_loction_world').addClass('open_market_location');
+        $('.market_loction_world').toggleClass('open_market_location');
     })
     
     $('.close_market_map').on('click', function(){

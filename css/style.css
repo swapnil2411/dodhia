@@ -201,10 +201,65 @@ header.sticky{
     color: var(--red-font);
 }
 
+header .main_navbar .right_navbar nav ul li.dropdown .btn {
+    color: var(--black-color);
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    line-height: 1.3227513228vw;
+    padding: 0;
+  }
+
+  header .main_navbar .right_navbar nav ul li.dropdown .btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  header .main_navbar .right_navbar nav ul li.dropdown .btn:hover {
+    color: var(--red-font);
+  }
+
+  header .main_navbar .right_navbar nav ul li.dropdown .dropdown-menu {
+    min-width: 169px;
+    padding: 0;
+    top: 51px !important;
+    right: 0 !important;
+    left: unset !important;
+    transform: unset !important;
+    border-radius: 5px;
+  }
+
+  header .main_navbar .right_navbar nav ul li.dropdown .dropdown-menu .dropdown-item:nth-child(1){
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  header .main_navbar .right_navbar nav ul li.dropdown .dropdown-menu .dropdown-item:nth-child(3){
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  header .main_navbar .right_navbar nav ul li.dropdown .dropdown-menu .dropdown-item {
+    padding: 14px 20px;
+    color: var(--red-font);
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--red-font);
+  }
+
+  header .main_navbar .right_navbar nav ul li.dropdown .dropdown-menu .dropdown-item:hover{
+    background: var(--red-font);
+    color: var(--white);
+  }
+
 /* Banner CSS */
 
 .banner_area{
     position: relative;
+}
+
+.banner_area video{
+    display: block;
 }
 
 
@@ -366,6 +421,7 @@ header.sticky{
     position: relative;
     height: 100%;
     overflow: hidden;
+    display: block;
 }
 
 
@@ -512,7 +568,7 @@ header.sticky{
     content: "";
     top: 40%;
     width: calc(100% - 50px);
-    height: 1px;
+    height: 3px;
     background: #CB2229;
     left: 50px;
     z-index: -1;
@@ -528,7 +584,7 @@ header.sticky{
   .awards_area .awards_carousel .owl-item .item .box_boder_right {
     content: "";
     top: 40%;
-    width: 1px;
+    width: 3px;
     height: 70%;
     background: #CB2229;
     right: 0;
@@ -547,7 +603,7 @@ header.sticky{
     content: "";
     top: 110%;
     width: calc(100% - 50px);
-    height: 1px;
+    height: 3px;
     background: #CB2229;
     left: 50px;
     z-index: -1;
@@ -564,7 +620,7 @@ header.sticky{
   .awards_area .awards_carousel .owl-item .item .box_boder_left {
     content: "";
     top: 40%;
-    width: 1px;
+    width: 3px;
     height: 70%;
     background: #CB2229;
     left: 50px;
@@ -702,7 +758,7 @@ header.sticky{
     content: "";
     position: absolute;
     width: 50%;
-    height: 1px;
+    height: 3px;
     top: 50px;
     left: -30px;
     background: #CB2229;
@@ -721,7 +777,7 @@ header.sticky{
   .core_team_area .team_leader_carousel .owl-stage-outer .leader_box .box_boder_left {
     content: "";
     position: absolute;
-    width: 1px;
+    width: 3px;
     height: 100%;
     top: 50px;
     left: -30px;
@@ -743,7 +799,7 @@ header.sticky{
     content: "";
     position: absolute;
     width: 50%;
-    height: 1px;
+    height: 3px;
     top: calc(100% + 50px);
     left: -30px;
     background: #CB2229;
@@ -761,10 +817,10 @@ header.sticky{
   .core_team_area .team_leader_carousel .owl-stage-outer .leader_box .box_boder_right {
     content: "";
     position: absolute;
-    width: 1px;
+    width: 3px;
     height: 100%;
     top: 50px;
-    left: calc(50% - 30px);
+    left: calc(50% - 33px);
     background: #CB2229;
     transition: 0.3s ease-in all;
     transition-delay: 0.9s;
@@ -890,6 +946,7 @@ footer{
 .bottle_img{
     position: absolute;
     opacity: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
 }
 
 .bottle_01{
@@ -917,6 +974,7 @@ footer{
 .bobbin{
     position: absolute;
     opacity: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
 }
 
 .bobbin_01{
@@ -949,6 +1007,7 @@ footer{
     position: absolute;
     opacity: 0;
     z-index: 4;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
 }
 
 .thread_01{
@@ -978,6 +1037,7 @@ footer{
 .thread_vector{
     position: absolute;
     opacity: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
 }
 
 .thread_vector_01{
@@ -1007,6 +1067,7 @@ footer{
 .line_vector{
     position: absolute;
     opacity: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
 }
 
 .line_vector_01{
@@ -1094,6 +1155,16 @@ footer{
     background: var(--white);
 }
 
+.textile_stat_flex .textile_stat .textile_stat_txt h3{
+    font-weight: 600;
+    line-height: 42px;
+}
+
+.textile_stat_flex .textile_stat .textile_stat_txt p{
+    color: #969696;
+    line-height: 28px;
+}
+
 /* .textile_stat_flex .textile_stat .box_boder_top,
 .textile_stat_flex .textile_stat .box_boder_right,
 .textile_stat_flex .textile_stat .box_boder_bottom,
@@ -1105,7 +1176,7 @@ footer{
     content: '';
     top: 40%;
     width: calc(100% - 40px);
-    height: 2px;
+    height: 3px;
     background: var(--red-font);
     left: 40px;
     z-index: -1;
@@ -1121,7 +1192,7 @@ footer{
 .textile_stat_flex .textile_stat .box_boder_right{
     content: '';
     top: 40%;
-    width: 2px;
+    width: 3px;
     height: 70px;
     background: var(--red-font);
     right: 0;
@@ -1140,7 +1211,7 @@ footer{
     content: '';
     top: calc(100% + 20px);
     width: calc(100% - 40px);
-    height: 2px;
+    height: 3px;
     background: var(--red-font);
     left: 40px;
     z-index: -1;
@@ -1157,7 +1228,7 @@ footer{
 .textile_stat_flex .textile_stat .box_boder_left{
     content: '';
     top: 40%;
-    width: 2px;
+    width: 3px;
     height: 70px;
     background: var(--red-font);
     left: 40px;
@@ -1287,7 +1358,7 @@ footer{
 
 .next_generation_area{
     position: relative;
-    margin-top: -458px;
+    margin-top: -630px;
     z-index: 2;
 }
 
@@ -1419,8 +1490,16 @@ footer{
 .map_market_btn{
     position: absolute;
     left: 0;
-    bottom: 100px;
+    bottom: 175px;
 }
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none){
+    .market_loction_world {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+}
+
 
 .market_loction_world{
     display: -webkit-box;
@@ -1431,8 +1510,9 @@ footer{
     justify-content: space-between;
     border: 1px solid var(--red-font);
     padding: 35px 25px 25px;
-    margin-top: 0px;
-    background: #fff;
+    margin-top: -160px;
+    /* background: #fff; */
+    background: rgba(255, 255, 255, 0.5);
     height: 0;
     transform: scaleY(0);
     transform-origin: top;
@@ -1442,7 +1522,7 @@ footer{
 .market_loction_world.open_market_location{
     height: 100%;
     transform: scaleY(1);
-    margin-top: 50px;
+    margin-top: -160px;
 }
 
 .market_loction_world .american_market{
@@ -1573,6 +1653,7 @@ footer{
     align-items: center;
     cursor: pointer;
     margin-top: 12px;
+    transform: rotate(-90deg);
 }
 
 .open_market_list svg{
@@ -1601,6 +1682,7 @@ footer{
     position: absolute;
     top: 10px;
     right: 10px;
+    display: none;
 }
 
 .close_market_map svg{
@@ -1620,11 +1702,12 @@ footer{
     font-size: 96px;
     text-align: center;
     font-weight: 700;
-    background-image: url(../img/text_bg.png);
+    color: var(--white);
+    /* background-image: url(../img/text_bg.png);
     background-repeat: repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased; */
 }
 
 .product_banner_area .product_banner_title span{
@@ -1635,6 +1718,10 @@ footer{
 
 .product_listing_area{
     padding: 16px 0 100px;
+    background: url('../img/product_bg_vector.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .product_breadcrumb{
@@ -1796,7 +1883,7 @@ footer{
     font-weight: 700;
     transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
     width: 100%;
-    height: 60px;
+    min-height: 60px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -1894,4 +1981,54 @@ footer{
    
    ul.nacc li p {
     margin: 0;
+   }
+
+
+   /* Sector CSS */
+   .sector_banner_area{
+    padding: 169px 0 157px;
+    background: url('../img/sector_banner_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   }
+
+   .sectors_desc_panel{
+    position: relative;
+    background: transparent !important;
+    padding: 0 !important;
+   }
+
+   .grid .right_product_desc .product_desc_panel.active.sectors_desc_panel.active{
+    display: block !important;
+   }
+
+   .sectors_desc_panel .sectors_img_icon{
+    position: relative;
+   }
+
+   .sectors_desc_panel .sectors_img_icon .sector_main_img{
+    display: block;
+    width: 90%;
+   }
+
+   .sectors_desc_panel .sectors_img_icon .sector_icon{
+    max-width: 100%;
+    position: absolute;
+    top: 40px;
+    right: 0;
+   }
+
+   .sectors_para{
+    position: absolute;
+    right: 0;
+    background: rgba(203, 34, 41, 0.8);
+    width: 85%;
+    padding: 50px 30px;
+    bottom: -100px;
+   }
+
+   .sectors_para p{
+    line-height: 24px;
+    color: #fff;
    }

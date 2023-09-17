@@ -24,18 +24,30 @@
         <div class="main_navbar content_container">
             <div class="left_navbar">
                 <div class="logo_area">
-                    <img src="img/dodhia_logo.png" alt="Dodhia Group" class="img-fluid">
+                    <a href="index.html">
+                        <img src="img/dodhia_logo.png" alt="Dodhia Group" class="img-fluid">
+                    </a>
+                    
                 </div>
             </div>
             <div class="right_navbar">
                 <nav>
                     <ul>
-                        <li><a href="#" class="font-14">Textiles</a></li>
+                        <li><a href="textile.html" class="font-14">Textiles</a></li>
                         <li><a href="#" class="font-14">Chemicals</a></li>
                         <li><a href="#" class="font-14">Plastic Recycling</a></li>
                         <li><a href="#" class="font-14">About Us</a></li>
                         <li><a href="#" class="font-14">Contact Us</a></li>
-                        <li><a href="#" class="font-14">More</a></li>
+                        <li class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle font-14" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                More
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item font-14" href="#">Events</a>
+                                <a class="dropdown-item font-14" href="#">Newsroom</a>
+                                <a class="dropdown-item font-14" href="#">Careers</a>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -45,7 +57,7 @@
 
     <!-- Banner Section Start -->
     <section class="banner_area">
-        <video width="100%" height="100%" controls autoplay>
+        <video class="content_container" width="100%" height="100%" controls autoplay>
             <source src="img/banner_video.mp4" type="video/mp4">
           </video>
 
