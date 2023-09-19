@@ -142,6 +142,12 @@ $(document).ready(function(){
         })
     })
 
+    $('.help_form_floating .help_form_heading').on('click', function(){
+        $(this).parent('.help_form_floating').toggleClass('position_form');
+        $(this).parent().parent().parent('.help_form_area').toggleClass('overflow_unset');
+        
+    })
+
     $('.count-up').countUp({
         'time': 2000,
     });
