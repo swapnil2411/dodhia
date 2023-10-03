@@ -20,6 +20,11 @@
     .about_main_area{
         padding: 330px 0 220px;
     }
+
+    .dodhia_past_events{
+        max-width: 90%;
+        margin-left: auto;
+    }
 }
 
 @media (max-width: 1480px){

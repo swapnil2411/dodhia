@@ -100,6 +100,28 @@ $(document).ready(function(){
         }
     })
 
+    $('.past_events_slider').owlCarousel({
+        loop:true,
+        margin:20,
+        nav:true,
+        slideBy: 1,
+        dots: false,
+        // dotsEach: true,
+        items:4,
+        navText: ['<span class="iconify" data-icon="cil:arrow-left"></span>','<span class="iconify" data-icon="cil:arrow-right"></span>'],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1.5
+            },
+            1000:{
+                items:2.5,
+            }
+        }
+    })
+
     $('.left_manufacture_prod_carousel').owlCarousel({
         loop:true,
         margin:20,
@@ -116,6 +138,27 @@ $(document).ready(function(){
             },
             1000:{
                 items:4,
+            }
+        }
+    })
+    
+    $('.about_timeline_yr').owlCarousel({
+        loop:true,
+        margin:40,
+        nav:true,
+        slideBy: 1,
+        dots: false,
+        navText: ['<span class="iconify" data-icon="cil:arrow-left"></span>','<span class="iconify" data-icon="cil:arrow-right"></span>'],
+        // dotsEach: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:5
+            },
+            1000:{
+                items:7.5,
             }
         }
     })
@@ -151,5 +194,16 @@ $(document).ready(function(){
     $('.count-up').countUp({
         'time': 2000,
     });
-    
+
+
+    let windowLocation = window.location.href;
+    if (windowLocation.includes("newsroom")){
+        $(".main_navbar .right_navbar nav ul li a").addClass("white_links")
+    }
+    else if (windowLocation.includes("careers")){
+        $(".main_navbar .right_navbar nav ul li a").addClass("white_links")
+    }
+    else{
+        
+    }
 })
