@@ -39,18 +39,18 @@
                 <nav>
                     <ul>
                         <li><a href="textile.html" class="font-14">Textiles</a></li>
-                        <li><a href="#" class="font-14">Chemicals</a></li>
+                        <li><a href="chemical.html" class="font-14">Chemicals</a></li>
                         <li><a href="#" class="font-14">Plastic Recycling</a></li>
-                        <li><a href="#" class="font-14">About Us</a></li>
-                        <li><a href="#" class="font-14">Contact Us</a></li>
+                        <li><a href="aboutus.html" class="font-14">About Us</a></li>
+                        <li><a href="contactus.html" class="font-14">Contact Us</a></li>
                         <li class="dropdown">
                             <a class="btn btn-secondary dropdown-toggle font-14" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                                 More
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item font-14" href="#">Events</a>
-                                <a class="dropdown-item font-14" href="#">Newsroom</a>
-                                <a class="dropdown-item font-14" href="#">Careers</a>
+                                <a class="dropdown-item font-14" href="events.html">Events</a>
+                                <a class="dropdown-item font-14" href="newsroom.html">Newsroom</a>
+                                <a class="dropdown-item font-14" href="careers.html">Careers</a>
                             </div>
                         </li>
                     </ul>
@@ -97,12 +97,12 @@
     <!-- Textile Stats Start -->
     <section class="textile_stat_area">
         <div class="content_container">
-            <p class="textile_stat_para">
+            <p class="textile_stat_para top-move">
                 With a strong focus on textiles, we offer a diverse and integrated product range, manufactured at locations in Maharashtra and Gujarat. Our top-notch quality management systems and customer-oriented approach have allowed us to successfully export specialised yarns to over 45 countries worldwide.
             </p>
 
             <div class="textile_stat_flex row">
-                <div class="col-md-4 col-sm-6 col-12">
+                <div class="col-md-4 col-sm-6 col-12 top-move">
                     <div class="textile_stat">
                         <div class="textile_stat_icon">
                             <img src="img/textile_stat_1.png" alt="textile_stat_1" class="img-fluid">
@@ -117,7 +117,7 @@
                         <span class="box_boder_left"></span>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-12">
+                <div class="col-md-4 col-sm-6 col-12 top-move">
                     <div class="textile_stat">
                         <div class="textile_stat_icon">
                             <img src="img/textile_stat_2.png" alt="textile_stat_2" class="img-fluid">
@@ -132,7 +132,7 @@
                         <span class="box_boder_left"></span>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-12">
+                <div class="col-md-4 col-sm-6 col-12 top-move">
                     <div class="textile_stat">
                         <div class="textile_stat_icon">
                             <img src="img/textile_stat_2.png" alt="textile_stat_2" class="img-fluid">
@@ -147,7 +147,7 @@
                         <span class="box_boder_left"></span>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-12">
+                <div class="col-md-4 col-sm-6 col-12 top-move">
                     <div class="textile_stat">
                         <div class="textile_stat_icon">
                             <img src="img/textile_stat_3.png" alt="textile_stat_3" class="img-fluid">
@@ -162,7 +162,7 @@
                         <span class="box_boder_left"></span>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-12">
+                <div class="col-md-4 col-sm-6 col-12 top-move">
                     <div class="textile_stat">
                         <div class="textile_stat_icon">
                             <img src="img/textile_stat_4.png" alt="textile_stat_4" class="img-fluid">
@@ -177,7 +177,7 @@
                         <span class="box_boder_left"></span>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-12">
+                <div class="col-md-4 col-sm-6 col-12 top-move">
                     <div class="textile_stat">
                         <div class="textile_stat_icon">
                             <img src="img/textile_stat_4.png" alt="textile_stat_4" class="img-fluid">
@@ -198,16 +198,16 @@
     <!-- Textile Stats End -->
 
      <!-- Our Business Area Start -->
-     <section class="our_business_area">
-        <div class="sec_header">
-            <p class="sub_title font-14 red_txt">Discover our textile Sector</p>
-            <h3 class="title">
+     <section class="our_business_area" id="our_business_area">
+        <div class="sec_header" id="our_business_area_one">
+            <p class="sub_title font-14 red_txt top-move">Discover our textile Sector</p>
+            <h3 class="title top-move">
                 We serve diverse industries with <br>
                 <span class="red_txt">a wide range of applications</span>
             </h3>
         </div>
 
-        <div class="business_area_flex">
+        <div class="business_area_flex" id="our_business_area_two">
             <div class="owl-carousel owl-theme textile_range_carousel">
                 <div class="item business_col p-0">
                     <div class="business_box">
@@ -1000,6 +1000,57 @@
                 duration: 100,
                 // ease: Power3.easeInOut,
             })
+
+            const sectionOneTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#our_business_area",
+                start: "top 50%",
+                end: "bottom 40%",
+                scrub: 2,
+                toggleClass: {
+                    targets: "#our_business_area",
+                    className: "active"
+                },
+                toggleActions: "play none none none"
+            },
+            ease: Sine.easeNone
+        });
+        sectionOneTl.addLabel("start").from("#our_business_area #our_business_area_one", {
+            delay: -0.6,
+            duration: .8,
+            y: 100,
+            opacity: 1,
+            ease: Sine.easeOut,
+            stagger: {
+                amount: .2
+            }
+        }).from("#our_business_area #our_business_area_two", {
+            delay: -0.6,
+            duration: .8,
+            y: 200,
+            opacity: 1,
+            ease: Sine.easeOut,
+            stagger: {
+                amount: .2
+            }
+        }).addLabel("end");
+
+        gsap.set(".top-move", {
+            opacity: 0,
+            y: 150
+        }),
+        ScrollTrigger.batch(".top-move", {
+            start: "top 90%",
+            onEnter: a=>gsap.to(a, {
+                opacity: 1,
+                y: 0,
+                duration: 1.5,
+                stagger: {
+                    each: .25,
+                    grid: [1, 2]
+                }
+            })
+        })
 
             // let controller = new ScrollMagic.Controller();
 

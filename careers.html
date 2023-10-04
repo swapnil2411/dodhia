@@ -34,18 +34,18 @@
                 <nav>
                     <ul>
                         <li><a href="textile.html" class="font-14">Textiles</a></li>
-                        <li><a href="#" class="font-14">Chemicals</a></li>
+                        <li><a href="chemical.html" class="font-14">Chemicals</a></li>
                         <li><a href="#" class="font-14">Plastic Recycling</a></li>
-                        <li><a href="#" class="font-14">About Us</a></li>
-                        <li><a href="#" class="font-14">Contact Us</a></li>
+                        <li><a href="aboutus.html" class="font-14">About Us</a></li>
+                        <li><a href="contactus.html" class="font-14">Contact Us</a></li>
                         <li class="dropdown">
                             <a class="btn btn-secondary dropdown-toggle font-14" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                                 More
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item font-14" href="#">Events</a>
-                                <a class="dropdown-item font-14" href="#">Newsroom</a>
-                                <a class="dropdown-item font-14" href="#">Careers</a>
+                                <a class="dropdown-item font-14" href="events.html">Events</a>
+                                <a class="dropdown-item font-14" href="newsroom.html">Newsroom</a>
+                                <a class="dropdown-item font-14" href="careers.html">Careers</a>
                             </div>
                         </li>
                     </ul>
@@ -55,11 +55,109 @@
     </header>
     <!-- Header End -->
 
-    <!-- Newsroom Banner Start -->
+    <!-- Careers Banner Start -->
     <section class="newsroom_banner career_banner">
         <img src="img/careers_banner.png" alt="career banner">
     </section>
-    <!-- Newsroom Banner End -->
+    <!-- Careers Banner End -->
+
+    <!-- Career Info with form Area Start -->
+    <section class="career_info_area">
+        <div class="content_container">
+            <div class="sec_header">
+                <h3 class="title">Careers</h3>
+            </div>
+            <div class="career_info_flex">
+                <div class="left_career_info">
+                    <h3>
+                        Explore a world of opportunities at <span class="red_txt">one of India’s most dynamic workplaces</span>
+                    </h3>
+                    <h4>Spread the love</h4>
+                    <p class="font-14">At Dhodhia Group, we not only believe in enriching the lives of individuals by creating world class products, but also by offering rewarding career opportunities to aspiring professionals. We continually seek motivated individuals who embody the necessary skills and passion to contribute to our success. In return, we give them an atmosphere of trust and confidence, with a high degree of operational freedom and expert guidance. We ensure that our employees are given every opportunity of realising.
+                        You can send us your applications at <b>careers@dodhiagroup.co.in</b> or use the application form below.</p>
+                </div>
+                <div class="right_career_info">
+                    <img src="img/career_thumbnail.png" alt="Career Thumbnail" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="contact_form_area career_form">
+                <form class="myContactForm" id="myCareerForm">
+                    <div class="form_row">
+                        <div class="form_element">
+                            <label for="fname">First name</label>
+                            <input type="text" name="" id="fname">
+                        </div>
+                        <div class="form_element">
+                            <label for="lname">Last name</label>
+                            <input type="text" name="" id="lname">
+                        </div>
+                        
+                    </div>
+                    <div class="form_row">
+                        <div class="form_element">
+                            <label for="email">Your email</label>
+                            <input type="email" name="" id="email">
+                        </div>
+                        <div class="form_element">
+                            <label for="phone">Mobile number</label>
+                            <input type="number" name="" id="phone">
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_element file_upload_element">
+                            <label for="upload_file">Upload Resume (Please on upload .PDF or .DOCX file format. Not more than 5 MB)</label>
+                            <div class="custom_file_upload">
+                                <p class="font-14">Drop file her or</p>
+                                <button type="button" class="font-14">Select files</button>
+                                <input type="file" name="" id="upload_file">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_element msg_elemnent">
+                            <label for="message">Your address (Optional)</label>
+                            <textarea type="text" name="" id="message" rows="2"></textarea>
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_element">
+                            <label for="state">State</label>
+                            <input type="text" name="" id="state">
+                        </div>
+                        <div class="form_element">
+                            <label for="city">City</label>
+                            <input type="text" name="" id="city">
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_element terms_condition_element">
+                            <input type="checkbox" id="termsCheckbox">
+                            <label for="termsCheckbox" class="font-14">I agree and accept the <b>Privacy Policy</b>. <a href="#">Click here</a> to review the policy.</label>
+                        </div>
+                    </div>
+                    <button type="button" onclick="sendCareerMail()" class="contact_submit_btn career_submit_mail">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Career Info with form Area End -->
+
+    <!-- Career Footer Thumbnail Area Start -->
+    <section class="career_footer_thumbnail_area">
+        <img src="img/career_footer_thumbnail.png" alt="Career Thumbnail">
+        <div class="content_container">
+            <h2>
+                What’s a <br>
+                Dhodhia Story?
+            </h2>
+            <p>
+                Discover a fulfilling career with a team of passionate <br>professionals who value innovation, collaboration, and <br>personal growth. 
+            </p>
+            <a href="#" class="our_journey font-14">Our Journey</a>
+        </div>
+    </section>
+    <!-- Career Footer Thumbnail Area End -->
 
     <!-- Footer Start -->
     <section class="help_form_area">

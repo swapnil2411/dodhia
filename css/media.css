@@ -32,11 +32,149 @@
         text-align: unset;
         margin-left: 65px;
     }
+
+    .about_main_area{
+        padding: 19.571vw 0 11.458vw;
+    }
+}
+
+@media (max-width: 1280px){
+    .inner_about_area .left_about_area .bold_text_area h2 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .inner_about_area .left_about_area .semibold_text_area h2{
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .inner_about_area .left_about_area .semibold_text_area {
+        position: absolute;
+        top: 8%;
+        left: 0;
+        transform: unset;
+    }
+
+    .business_area_flex .business_col .business_box_content{
+        padding: 25px 25px 40px;
+    }
+}
+
+
+@media (min-width: 1000px){
+    .left_chem_prod_carousel .owl-dots{
+        display: none !important;
+    }
 }
 
 @media(max-width: 991px){
     .petopoly_area{
         margin-left: unset;
         margin: 0 auto;
+    }
+
+    .inner_about_area .left_about_area .bold_text_area h2 {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .inner_about_area .left_about_area .semibold_text_area h2{
+        font-size: 55px;
+        line-height: 55px;
+    }
+
+    .inner_about_area .left_about_area,
+    .inner_about_area .right_about_area{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .inner_about_area .right_about_area{
+        padding-top: 5vw;
+    }
+
+    .font-18{
+        font-size: 16px;
+    }
+
+    .font-14{
+        font-size: 12px;
+    }
+
+    .font-32{
+        font-size: 26px;
+    }
+
+    .inner_about_area .right_about_area .about_area_content .para,
+    .awards_area .presentation_txt p{
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .business_area_flex .business_col .business_box_content .business_box_content_head h3{
+        line-height: 32px;
+    }
+
+    .inner_about_area .right_about_area .about_area_content .secondary_para,
+    .business_area_flex .business_col .business_box_content .business_box_content_head p, .business_area_flex .business_col .business_box_content .business_box_content_body p{
+        line-height: 20px;
+    }
+
+    .business_area_flex .business_col .business_box_content{
+        padding: 20px;
+    }
+
+    .our_business_area .sec_header .title,
+    .sec_header .title{
+        font-size: 40px;
+        line-height: 47px;
+    }
+
+    .our_business_area .sec_header .yarn_ball{
+        left: -2.865vw;
+    }
+}
+
+
+@media (max-width: 767px){
+    .homepage_stat_area .home_stat_box:not(:last-child) .home_stat_col{
+        margin-bottom: 45px !important;
+    }
+
+    .inner_about_area .left_about_area .bold_text_area h2 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .inner_about_area .left_about_area .semibold_text_area{
+        top: 15%;
+    }
+
+    .inner_about_area .left_about_area .semibold_text_area h2 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .inner_about_area .right_about_area .about_area_content .para,
+    .awards_area .presentation_txt p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .our_business_area .sec_header .title,
+    .sec_header .title{
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    .ptb-95{
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 600px){
+    .sec_header .title br{
+        display: none;
     }
 }

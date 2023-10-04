@@ -71,9 +71,12 @@ $(document).ready(function(){
                 items:1
             },
             600:{
-                items:3
+                items:2
             },
             1000:{
+                items:3,
+            },
+            1300: {
                 items:4,
             }
         }
@@ -141,6 +144,26 @@ $(document).ready(function(){
             }
         }
     })
+
+    $('.left_chem_prod_carousel').owlCarousel({
+        loop:true,
+        margin:20,
+        nav:false,
+        slideBy: 1,
+        dots: true,
+        // dotsEach: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4,
+            }
+        }
+    })
     
     $('.about_timeline_yr').owlCarousel({
         loop:true,
@@ -161,6 +184,17 @@ $(document).ready(function(){
                 items:7.5,
             }
         }
+    })
+
+    $(".innovate_carousel").owlCarousel({
+        loop:true,
+        margin:40,
+        nav:false,
+        slideBy: 1,
+        items: 1,
+        dots: true,
+        navText: ['<span class="iconify" data-icon="cil:arrow-left"></span>','<span class="iconify" data-icon="cil:arrow-right"></span>'],
+        // dotsEach: true,
     })
 
     $('.open_market_list').on('click', function(){
@@ -206,4 +240,7 @@ $(document).ready(function(){
     else{
         
     }
+
+
+    
 })
