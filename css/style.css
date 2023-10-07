@@ -1592,7 +1592,7 @@ footer{
 .market_loction_world.open_market_location{
     height: 100%;
     transform: scaleY(1);
-    margin-top: -160px;
+    margin-top: -8.333vw;
 }
 
 .market_loction_world .american_market{

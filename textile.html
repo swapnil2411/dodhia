@@ -40,7 +40,7 @@
                     <ul>
                         <li><a href="textile.html" class="font-14">Textiles</a></li>
                         <li><a href="chemical.html" class="font-14">Chemicals</a></li>
-                        <li><a href="#" class="font-14">Plastic Recycling</a></li>
+                        <li><a href="plasticrecycle.html" class="font-14">Plastic Recycling</a></li>
                         <li><a href="aboutus.html" class="font-14">About Us</a></li>
                         <li><a href="contactus.html" class="font-14">Contact Us</a></li>
                         <li class="dropdown">
@@ -62,7 +62,7 @@
 
 
     <!-- Textile Animation Start -->
-    <!-- <section class="thread_animation">
+    <section class="thread_animation">
         <img class="bottle_img bottle_01" src="img/textile-animation/left-bottle-crush.png" alt="bottle" />
         <img class="bottle_img bottle_02" src="img/textile-animation/top-bottle-crush.png" alt="bottle" />
         <img class="bottle_img bottle_03" src="img/textile-animation/right-bottle-crush.png" alt="bottle" />
@@ -85,7 +85,7 @@
 
         <marquee class="marquee_one marquee">Yarn  Manufacturing &nbsp; Yarn  Manufacturing &nbsp; Yarn  Manufacturing &nbsp; Yarn  Manufacturing</marquee>
         <marquee class="marquee_two marquee" direction="right">Textile Production &nbsp; Textile Production &nbsp; Textile Production &nbsp; Textile Production</marquee>
-    </section> -->
+    </section>
     <!-- Textile Animation End -->
 
     <!-- <section class="next_generation_area">
@@ -97,7 +97,7 @@
     <!-- Textile Stats Start -->
     <section class="textile_stat_area">
         <div class="content_container">
-            <p class="textile_stat_para top-move">
+            <p class="textile_stat_para">
                 With a strong focus on textiles, we offer a diverse and integrated product range, manufactured at locations in Maharashtra and Gujarat. Our top-notch quality management systems and customer-oriented approach have allowed us to successfully export specialised yarns to over 45 countries worldwide.
             </p>
 
@@ -583,7 +583,7 @@
     <section class="three_r_area ptb-95 pb-0">
         <div class="content_container">
             <div class="row align-items-center justify-content-center">
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4 col-md-6 col-12 petopoly_col">
                     <p class="red_txt font-14 three_r_title">Our initiative</p>
                     <div class="three_r_txt">
                         <div class="bold_text_area">
@@ -598,7 +598,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4 col-md-6 col-12 petopoly_col">
                     <img src="img/petopoly_bg.png" alt="petopoly_bg" class="img-fluid">
                     <div class="petopoly_txt">
                         <h2>What is Petopoly ?</h2>
@@ -615,7 +615,7 @@
                         <a href="javascript: void" class="readmorebtn">Read More...</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4 col-md-6 col-12 petopoly_col">
                     <div class="petopoly_area">
                         <img src="img/petopoly_logo.png" alt="Petopoly" class="img-fluid">
                         <a href="#" class="readmorebtn">
@@ -998,7 +998,7 @@
             let t1 = gsap.timeline({
                 scrollTrigger:{
                     trigger: ".thread_animation",
-                    //markers: true,
+                    ////markers: true,
                     start: "10% 10%",
                     end: "110% 50%",
                     scrub: true,
@@ -1046,7 +1046,58 @@
             },
             ease: Sine.easeNone
         });
-        sectionOneTl.addLabel("start").from("#our_business_area #our_business_area_one", {
+            sectionOneTl.addLabel("start").from("#our_business_area #our_business_area_one", {
+                delay: -0.6,
+                duration: .8,
+                y: 100,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).from("#our_business_area #our_business_area_two", {
+                delay: -0.6,
+                duration: .8,
+                y: 200,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).addLabel("end");
+
+            // gsap.set(".top-move", {
+            //     opacity: 0,
+            //     y: 150
+            // }),
+            // ScrollTrigger.batch(".top-move", {
+            //     start: "top 90%",
+            //     onEnter: a=>gsap.to(a, {
+            //         opacity: 1,
+            //         y: 0,
+            //         duration: 1.5,
+            //         stagger: {
+            //             each: .25,
+            //             grid: [1, 2]
+            //         }
+            //     })
+            // })
+
+        const sectionOneT3 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".textile_stat_area",
+                start: "top 50%",
+                end: "bottom 40%",
+                scrub: 2,
+                toggleClass: {
+                    targets: ".textile_stat_area",
+                    className: "active"
+                },
+                toggleActions: "play none none none"
+            },
+            ease: Sine.easeNone
+        });
+        sectionOneT3.addLabel("start").from(".textile_stat_area .textile_stat_para", {
             delay: -0.6,
             duration: .8,
             y: 100,
@@ -1055,7 +1106,43 @@
             stagger: {
                 amount: .2
             }
-        }).from("#our_business_area #our_business_area_two", {
+        }).from(".textile_stat_area .textile_stat_flex", {
+            delay: -0.6,
+            duration: .8,
+            y: 200,
+            opacity: 1,
+            ease: Sine.easeOut,
+            stagger: {
+                amount: .2
+            }
+        }).addLabel("end");
+        
+
+
+        const sectionOneT2 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".manufacturing_range_products_area",
+                start: "top 50%",
+                end: "bottom 40%",
+                scrub: 2,
+                toggleClass: {
+                    targets: ".manufacturing_range_products_area",
+                    className: "active"
+                },
+                toggleActions: "play none none none"
+            },
+            ease: Sine.easeNone
+        });
+        sectionOneT2.addLabel("start").from(".manufacturing_range_products_area .sec_header", {
+            delay: -0.6,
+            duration: .8,
+            y: 100,
+            opacity: 1,
+            ease: Sine.easeOut,
+            stagger: {
+                amount: .2
+            }
+        }).from(".manufacturing_range_products_area .manufacturing_products_info", {
             delay: -0.6,
             duration: .8,
             y: 200,
@@ -1066,22 +1153,148 @@
             }
         }).addLabel("end");
 
-        gsap.set(".top-move", {
-            opacity: 0,
-            y: 150
-        }),
-        ScrollTrigger.batch(".top-move", {
-            start: "top 90%",
-            onEnter: a=>gsap.to(a, {
-                opacity: 1,
-                y: 0,
-                duration: 1.5,
-                stagger: {
-                    each: .25,
-                    grid: [1, 2]
-                }
-            })
+        const sectionOneT4 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".world_innovation_area",
+                start: "top 50%",
+                end: "bottom 40%",
+                scrub: 2,
+                toggleClass: {
+                    targets: ".world_innovation_area",
+                    className: "active"
+                },
+                toggleActions: "play none none none"
+            },
+            ease: Sine.easeNone
+        });
+        sectionOneT4.addLabel("start").from(".world_innovation_area .sec_header", {
+            delay: -0.6,
+            duration: .8,
+            y: 100,
+            opacity: 1,
+            ease: Sine.easeOut,
+            stagger: {
+                amount: .2
+            }
+        }).from(".world_innovation_area .world_innovation_video", {
+            delay: -0.6,
+            duration: .8,
+            y: 200,
+            opacity: 1,
+            ease: Sine.easeOut,
+            stagger: {
+                amount: .2
+            }
+        }).addLabel("end");
+
+        const sectionOneT5 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".three_r_area",
+                start: "top 50%",
+                end: "bottom 40%",
+                scrub: 2,
+                toggleClass: {
+                    targets: ".three_r_area",
+                    className: "active"
+                },
+                toggleActions: "play none none none"
+            },
+            ease: Sine.easeNone
+        });
+        sectionOneT5.addLabel("start").from(".three_r_area .petopoly_col", {
+            delay: -0.6,
+            duration: .8,
+            y: 100,
+            opacity: 1,
+            ease: Sine.easeOut,
+            stagger: {
+                amount: .2
+            }
         })
+
+        const sectionOneT6 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".certification_area",
+                start: "top 50%",
+                end: "bottom 40%",
+                scrub: 2,
+                toggleClass: {
+                    targets: ".certification_area",
+                    className: "active"
+                },
+                toggleActions: "play none none none"
+            },
+            ease: Sine.easeNone
+        });
+        sectionOneT6.addLabel("start").from(".certification_area", {
+            delay: -0.6,
+            duration: .8,
+            y: 200,
+            opacity: 1,
+            ease: Sine.easeOut,
+            stagger: {
+                amount: .2
+            }
+        }).from(".certification_area .sec_header", {
+            delay: -0.6,
+            duration: .8,
+            y: 20,
+            opacity: 1,
+            ease: Sine.easeOut,
+            stagger: {
+                amount: .2
+            }
+        }).addLabel("end");
+        
+
+        const sectionOneT7 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".our_market_area",
+                start: "top 50%",
+                end: "bottom 40%",
+                scrub: 2,
+                toggleClass: {
+                    targets: ".our_market_area",
+                    className: "active"
+                },
+                toggleActions: "play none none none"
+            },
+            ease: Sine.easeNone
+        });
+        sectionOneT7.addLabel("start").from(".our_market_area .sec_header", {
+            delay: -0.6,
+            duration: .8,
+            y: 100,
+            opacity: 1,
+            ease: Sine.easeOut,
+            stagger: {
+                amount: .2
+            }
+        }).from(".our_market_area .market_img img", {
+            delay: -0.6,
+            duration: .8,
+            y: 200,
+            opacity: 1,
+            ease: Sine.easeOut,
+            stagger: {
+                amount: .2
+            }
+        }).from(".our_market_area .map_market_btn", {
+            delay: -0.6,
+            duration: .8,
+            y: 200,
+            opacity: 1,
+            ease: Sine.easeOut,
+            stagger: {
+                amount: .2
+            }
+        }).addLabel("end");
+        
+        
+        
+
+
+
 
             // let controller = new ScrollMagic.Controller();
 

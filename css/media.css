@@ -77,6 +77,21 @@
     .petopoly_txt .readmorebtn{
         display: block;
     }
+
+    .title_dot::after{
+        width: 15px;
+        height: 15px;
+    }
+
+    .market_loction_world{
+        padding: 30px 20px 20px;
+    }
+
+    .market_loction_world .american_market h2, .market_loction_world .middleeast_market h2, .market_loction_world .asian_market h2, .market_loction_world .europian_market h2, .market_loction_world .indian_market h2{
+        padding-left: 28px;
+        font-size: 22px;
+        line-height: 26px;
+    }
 }
 
 
@@ -128,7 +143,8 @@
     .inner_about_area .right_about_area .about_area_content .para,
     .awards_area .presentation_txt p,
     .textile_stat_area .textile_stat_para,
-    .textile_stat_flex .textile_stat .textile_stat_txt h3{
+    .textile_stat_flex .textile_stat .textile_stat_txt h3,
+    .market_loction_world .american_market h2, .market_loction_world .middleeast_market h2, .market_loction_world .asian_market h2, .market_loction_world .europian_market h2, .market_loction_world .indian_market h2{
         font-size: 20px;
         line-height: 25px;
     }
@@ -160,6 +176,18 @@
         font-size: 18px;
         line-height: 20px;
     }
+
+    .market_loction_world{
+        flex-wrap: wrap;
+    }
+
+    .market_loction_world .american_market,
+    .market_loction_world .europian_market,
+    .market_loction_world .middleeast_market, .market_loction_world .asian_market{
+        flex: 0 0 25%;
+        max-width: 25%;
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -185,7 +213,8 @@
     .inner_about_area .right_about_area .about_area_content .para,
     .awards_area .presentation_txt p,
     .textile_stat_area .textile_stat_para,
-    .textile_stat_flex .textile_stat .textile_stat_txt h3 {
+    .textile_stat_flex .textile_stat .textile_stat_txt h3,
+    .market_loction_world .american_market h2, .market_loction_world .middleeast_market h2, .market_loction_world .asian_market h2, .market_loction_world .europian_market h2, .market_loction_world .indian_market h2 {
         font-size: 18px;
         line-height: 22px;
     }
@@ -227,6 +256,23 @@
     .three_r_area > .content_container > .row > div:nth-child(2){
         margin: 60px 0;
     }
+
+    .market_loction_world .american_market,
+    .market_loction_world .europian_market,
+    .market_loction_world .middleeast_market, .market_loction_world .asian_market{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        margin-bottom: 20px;
+    }
+
+    .market_loction_world .indian_market{
+        flex: 0 0 66%;
+        max-width: 66%;
+    }
+
+    .market_loction_world.open_market_location{
+        justify-content: flex-start;
+    }
 }
 
 @media (max-width: 600px){
@@ -255,5 +301,17 @@
         width: 10px !important;
         height: 10px !important;
         margin: 0 7px !important;
+    }
+    .market_loction_world .american_market,
+    .market_loction_world .europian_market,
+    .market_loction_world .middleeast_market, .market_loction_world .asian_market{
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .market_loction_world .indian_market{
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
