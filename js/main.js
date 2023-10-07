@@ -95,7 +95,11 @@ $(document).ready(function(){
                 items:1
             },
             600:{
-                items:3
+                items:2
+            },
+
+            800:{
+                items: 3
             },
             1000:{
                 items:4,
@@ -134,12 +138,15 @@ $(document).ready(function(){
         // dotsEach: true,
         responsive:{
             0:{
-                items:1
+                items:2
             },
             600:{
+                items:2
+            },
+            768: {
                 items:3
             },
-            1000:{
+            1100:{
                 items:4,
             }
         }
@@ -225,6 +232,24 @@ $(document).ready(function(){
         
     })
 
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+         //>=, not <=
+        if (scroll >= 150) {
+            //clearHeader, not clearheader - caps H
+            $(".how_it_works_txt").addClass("hitSection");
+            $(".plastic_recycling_banner").addClass('showHide');
+        }
+        else{
+            $(".how_it_works_txt").removeClass("hitSection");
+            $(".plastic_recycling_banner").removeClass('showHide');
+        }
+    }); //missing );
+
+    
+  
+
     $('.count-up').countUp({
         'time': 2000,
     });
@@ -236,6 +261,9 @@ $(document).ready(function(){
     }
     else if (windowLocation.includes("careers")){
         $(".main_navbar .right_navbar nav ul li a").addClass("white_links")
+    }
+    else if (windowLocation.includes("plasticrecycle")){
+        $("header").addClass("plastic_recycle_header")
     }
     else{
         

@@ -28,6 +28,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+html,body{
+    scroll-behavior: smooth;
+}
+
 body {
 	line-height: 1;
     font-family: 'Outfit', sans-serif;
@@ -152,6 +157,11 @@ header.sticky{
     position: fixed;
     width: 100%;
     background: #fff;
+    top: 0;
+}
+
+header.sticky.plastic_recycle_header{
+    background: transparent;
 }
 
 .main_navbar{
@@ -1519,6 +1529,14 @@ footer{
     font-weight: 300;
 }
 
+.petopoly_txt .readmorebtn{
+    font-size: 12px;
+    color: var(--red-font);
+    text-align: center;
+    margin-top: 8px;
+    display: none;
+}
+
 .petopoly_txt p .green_txt{
     color: #388e74;
 }
@@ -1538,7 +1556,11 @@ footer{
 .map_market_btn{
     position: absolute;
     left: 0;
-    bottom: 175px;
+    bottom: 9.115vw;
+}
+
+.map_market_btn .open_txt{
+    font-size: 0.981vw;
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none){
@@ -1683,8 +1705,8 @@ footer{
 }
 
 .open_market_list{
-    height: 35px;
-    width: 35px;
+    height: 1.823vw;
+    width: 1.823vw;
     border-radius: 100%;
     background: #CB2229;
     display: block;
@@ -1700,13 +1722,13 @@ footer{
     -webkit-box-align: center;
     align-items: center;
     cursor: pointer;
-    margin-top: 12px;
+    margin-top: 0.625vw;
     transform: rotate(-90deg);
 }
 
 .open_market_list svg{
     color: #fff;
-    font-size: 32px;
+    font-size: 1.667vw;
 }
 
 .close_market_map{
@@ -3215,7 +3237,7 @@ footer{
     position: fixed;
     top: 30vh;
     background: #fff;
-    transform: scaleX(1);
+    transform:translateX(0);
     transition: 0.2s ease-in-out all;
     transform-origin: right;
 }
@@ -3227,7 +3249,7 @@ footer{
     position: fixed;
     top: 60vh;
     background: #fff;
-    transform: scaleX(1);
+    transform: translate(0vw, 0vw);
     transition: 0.2s ease-in-out all;
     transform-origin: left;
 }
@@ -3661,4 +3683,599 @@ footer{
     position: absolute;
     bottom: -45px;
     left: 0;
+}
+
+/* Plastic Recycling */
+.plastic_recycling_banner{
+    padding: 13.021vw 0 7.813vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: 1;
+    transition: 0.5s ease-in-out all;
+    transform: translateY(0);
+}
+
+.plastic_recycling_banner.showHide{
+    z-index: 0;
+    opacity: 0;
+    transform: translateY(-50vh);
+}
+
+.plastic_recycling_banner .plastic_recycling_banner_content h2{
+    font-size: 6.250vw;
+    line-height: normal;
+    font-weight: 400;
+    color: var(--black-color);
+}
+
+.plastic_recycling_banner .plastic_recycling_banner_content h2 span{
+    font-size: 7.292vw;
+    line-height: normal;
+    font-weight: 700;
+}
+
+.plastic_recycling_banner .banner_symbol{
+    width: 10.521vw;
+    height: 10.521vw;
+    position: absolute;
+    top: 10.313vw;
+    right: 8vw;
+}
+
+.plastic_recycling_banner .banner_bottle{
+    width: 22.500vw;
+    height: 28.542vw;
+    position: absolute;
+    bottom: -11vw;
+    right: 11vw
+}
+
+.how_it_works_area{
+   
+}
+
+.how_it_works_area .how_it_works_content{
+    margin-top: 60vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.how_it_works_area .how_it_works_content .black_vector_01{
+    height: 100vh;
+    width: 100vw;
+    max-width: unset;
+}
+
+.how_it_works_area .how_it_works_content .how_it_works_txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.how_it_works_txt{
+    width: 100%;
+}
+
+.how_it_works_txt h3{
+    font-size: 6.250vw;
+    line-height: 94.5%;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5.208vw;
+}
+
+.how_it_works_txt h3 span{
+    font-size: 3.333vw;
+    line-height: normal;
+    line-height: 94.5%;
+}
+
+.how_it_works_txt .scroll_btn{
+    text-align: center;
+    cursor: pointer;
+    display: block;
+}
+
+.how_it_works_txt .scroll_btn svg{
+    width: 2.031vw;
+    height: 1.302vw;
+}
+
+.how_it_works_txt .scroll_btn span{
+    display: block;
+    font-size: 1.042vw;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 0.625vw;
+}
+
+
+.plastic_recycle_text_area{
+    padding: 6.208vw 0;
+}
+
+.plastic_recycle_para{
+    font-size: 1.667vw;
+    line-height: 2.604vw;
+    text-align: center;
+}
+
+.plastic_recycle_stepone_area{
+    height: 100vh;
+    position: relative;
+}
+
+.plastic_recycle_stepone_area .step_one_content p{
+    font-size: 1.667vw;
+    font-weight: 500;
+    line-height: 2.604vw;
+    color: var(--black-color);
+}
+
+
+.plastic_recycle_stepone_area .step_one_content h3{
+    font-size: 6.250vw;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--black-color);
+}
+
+.bottle_collection{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3vw;
+    width: 44.531vw;
+    height: 30.833vw;
+    opacity: 0;
+    transition: 0.5s ease-in-out all;
+}
+
+.left_small_bottle,
+.right_small_bottle,
+.left_big_bottle,
+.right_big_bottle{
+    position: absolute;
+    top: 62%;
+    transform: translate(-50%);
+}
+
+.left_big_bottle{
+    left: 5vw;
+    width: 6.615vw;
+    height: 7.240vw;
+    opacity: 0;
+    transition: 0.5s ease-in-out all;
+}
+
+.left_small_bottle_one{
+    left: 25vw;
+    width: 2.760vw;
+    height: 4.844vw;
+    opacity: 0;
+    transition: 0.5s ease-in-out all;
+}
+
+.left_small_bottle_two{
+    left: 13vw;
+    width: 3.760vw;
+    height: 5.844vw;
+    transform: rotate(-20deg);
+    opacity: 0;
+    transition: 0.5s ease-in-out all;
+}
+
+.right_big_bottle{
+    right: 0vw;
+    width: 6.615vw;
+    height: 7.240vw;
+     opacity: 0;
+    transition: 0.5s ease-in-out all;
+}
+
+.right_small_bottle_one{
+    right: 23vw;
+    width: 2.760vw;
+    height: 4.844vw;
+     opacity: 0;
+    transition: 0.5s ease-in-out all;
+}
+
+.right_small_bottle_two{
+    right: 15vw;
+    width: 3.760vw;
+    height: 5.844vw;
+    transform: rotate(20deg);
+     opacity: 0;
+    transition: 0.5s ease-in-out all;
+}
+
+.plastic_recycle_steptwo_area{
+    height: 100vh;
+    position: relative;
+}
+
+
+
+.plastic_recycle_steptwo_area .step_two_content p{
+    font-size: 1.667vw;
+    font-weight: 500;
+    line-height: 2.604vw;
+    text-align: right;
+    color: var(--black-color);
+}
+
+
+.plastic_recycle_steptwo_area .step_two_content h3{
+    font-size: 6.250vw;
+    font-weight: 600;
+    line-height: normal;
+    text-align: right;
+    color: var(--black-color);
+}
+
+.plastic_recycle_steptwo_area .step_two_img_area .bottle_sepration{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s ease-in-out all;
+}
+
+.plastic_recycle_steptwo_area .step_two_img_area .bottle_sepration_04{
+    bottom: 0;
+    width: 52.292vw;
+    height: 25vw;
+}
+
+.plastic_recycle_steptwo_area .step_two_img_area .bottle_sepration_03{
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 6.563vw;
+    height: 6.458vw;
+}
+
+.plastic_recycle_steptwo_area .step_two_img_area .bottle_sepration_02{
+    top: 23vh;
+    width: 6.563vw;
+    height: 5.938vw;
+}
+
+.plastic_recycle_steptwo_area .step_two_img_area .bottle_sepration_01{
+    top: 0vh;
+    width: 3.958vw;
+    height: 7.604vw;
+}
+
+.plastic_recycle_stepone_area .step_one_content,
+.plastic_recycle_steptwo_area .step_two_content,
+.plastic_recycle_stepfour_area .step_four_content{
+    transform: translateY(10vw);
+    opacity: 0;
+    transition: 0.5s ease-in-out all;
+}
+
+.plastic_recycle_stepthree_area{
+    height: 100vh;
+    position: relative;
+}
+
+.plastic_recycle_stepthree_area .step_three_content{
+    transform: translateY(25vh);
+    opacity: 0;
+    transition: 0.5s ease-in-out all;
+}
+
+.black_vector_02{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0;
+    transform: translateY(20vw);
+    transition: 1s ease-in-out all;
+}
+
+.plastic_recycle_stepthree_area .step_three_content p{
+    font-size: 1.667vw;
+    font-weight: 500;
+    line-height: 2.604vw;
+    text-align: left;
+    color: #fff;
+}
+
+
+.plastic_recycle_stepthree_area .step_three_content h3{
+    font-size: 6.250vw;
+    font-weight: 600;
+    line-height: normal;
+    text-align: left;
+    color: #fff;
+}
+
+.crushing_img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s ease-in-out all;
+}
+
+.crushing_bottle_01{
+    top: 5vh;
+    width: 4.375vw;
+    height: 7.292vw;
+}
+
+.crushing_bottle_02{
+    top: 22vh;
+    left: 52%;
+    width: 5.885vw;
+    height: 5.573vw;
+}
+
+.crushing_bottle_03{
+    top: 35vh;
+    left: 53%;
+    width: 6.250vw;
+    height: 6.510vw;
+}
+
+.crushing_wheel_01{
+    top: 45vh;
+    left: 41.5%;
+    width: 20.042vw;
+    height: 20.042vw;
+    transform: translate(-50%) rotate(0);
+    transition: 1s ease-in-out all;
+}
+
+.crushing_wheel_02{
+    top: 45vh;
+    left: 61.5%;
+    width: 20.042vw;
+    height: 20.042vw;
+    transform: translate(-50%) rotate(0);
+    transition: 1s ease-in-out all;
+}
+
+.plastic_recycle_stepfour_area{
+    height: 100vh;
+    position: relative;
+}
+
+.plastic_recycle_stepfour_area .step_four_content p{
+    font-size: 1.667vw;
+    font-weight: 500;
+    line-height: 2.604vw;
+    text-align: left;
+    color: var(--black-color);
+    text-align: right;
+}
+
+
+.plastic_recycle_stepfour_area .step_four_content h3{
+    font-size: 6.250vw;
+    font-weight: 600;
+    line-height: normal;
+    text-align: left;
+    color: var(--black-color);
+    text-align: right;
+}
+
+.plastic_recycle_stepfour_area .step_four_img_area .washing_img{
+    position: absolute;
+    top: 0;
+}
+
+.plastic_recycle_stepfour_area .step_four_img_area .washing_img_02{
+    width: 51.667vw;
+    height: 62.865vw;
+    left: 5vw;
+    opacity: 0;
+    transform: scale(0.4);
+    transition: 0.5s ease-in-out all;
+}
+
+.plastic_recycle_stepfour_area .step_four_img_area  .washing_img_01{
+    left: 15vw;
+    z-index: 1;
+    opacity: 0;
+    transform: scalY(0);
+    transition: 0.5s ease-in-out all;
+}
+
+.plastic_recycle_stepfive_area{
+    height: 140.65116279069767vh;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.plastic_recycle_stepfive_area .step_five_content{
+    transform: translateY(40vh);
+    opacity: 0;
+    transition: 0.5s ease-in-out all;
+}
+
+.plastic_recycle_stepfive_area .step_five_content p{
+    font-size: 1.667vw;
+    font-weight: 500;
+    line-height: 2.604vw;
+    color: var(--white);
+}
+
+
+.plastic_recycle_stepfive_area .step_five_content h3{
+    font-size: 6.250vw;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--white);
+}
+
+.black_vector_03{
+    position: fixed;
+    top: 0;
+    transform: translateY(10vh);
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s ease-in-out all;
+}
+
+.melting_machine{
+    position: absolute;
+    right: 15vw;
+    width: 67.8125vw;
+    height: 162.32558139534885vh;
+    transform: translateY(0) scale(1);
+}
+
+.plastic_recycle_stepsix_area{
+    height: 100vh;
+    position: relative;
+}
+
+.plastic_recycle_stepsix_area .step_six_content{
+    transform: translateY(40vh);
+    opacity: 0;
+    transition: 0.5s ease-in-out all;
+}
+
+.plastic_recycle_stepsix_area .step_six_content p{
+    font-size: 1.667vw;
+    font-weight: 500;
+    line-height: 2.604vw;
+    color: var(--black-color);
+    text-align: right;
+}
+
+
+.plastic_recycle_stepsix_area .step_six_content h3{
+    font-size: 6.250vw;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--black-color);
+    text-align: right;
+}
+
+.reuse_bottle{
+    position: absolute;
+    left: 5vw;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: 0.5s ease-in-out all;
+}
+
+/* .resue_bottle_02{
+    left: 15vw;
+}
+
+.resue_bottle_03{
+    left: 25vw;
+} */
+
+.step_six_img_area{
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.our_recycling_products_flex{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 56px;
+}
+
+.our_recycling_products_flex .recycling_products_container{
+    flex: 0 0 25%;
+    max-width: calc(25% - 0.521vw);
+}
+
+.our_recycling_products_flex .recycling_products_container .recycling_product_box{
+    padding: 1.354vw;
+    border: 0.052vw solid var(--light-grey);
+    height: 100%
+}
+
+.our_recycling_products_flex .recycling_products_container .recycling_product_box img{
+    width: 100%;
+    display: block;
+}
+
+
+
+.our_recycling_products_flex .recycling_products_container .recycling_product_box .recycling_product_txt h2{
+    font-size: 24px;
+    color: var(--red-font);
+    font-weight: 700;
+    margin: 30px 0 16px;
+}
+
+.our_recycling_products_flex .recycling_products_container .recycling_product_box .recycling_product_txt p,
+.our_recycling_products_flex .recycling_products_container .recycling_product_box .recycling_product_txt li{
+    font-size: 16px;
+}
+
+
+.our_recycling_products_flex .recycling_products_container .recycling_product_box .recycling_product_txt p{
+    font-weight: 700;
+}
+
+.our_recycling_products_flex .recycling_products_container .recycling_product_box .recycling_product_txt li:not(:last-child){
+    margin-bottom: 6px;
+}
+
+.our_recycling_products_flex .recycling_products_container .recycling_product_box .recycling_product_txt li b{
+    font-weight: 700 !important;
+}
+
+.recycling_certifications_flex{
+    max-width: 70%;
+    margin: 85px auto 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.recycling_certifications_flex div{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.certfication_line{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.our_recycling_certificate_area{
+    padding-bottom: 150px;
 }
