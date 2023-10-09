@@ -1005,154 +1005,186 @@ footer{
 
 .bottle_img{
     position: absolute;
+    /* max-width: 20%; */
+    top: 50%;
+    left: 50%;
     opacity: 0;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
+    transform: translate(-50%, -50%);
+    /* opacity: 0; */
+    /* transition: all cubic-bezier(0.19, 1, 0.22, 1)3s; */
 }
 
 .bottle_01{
-    top: 18vw;
+    /* transform: translate(-162%, -65%); */
+    /* top: 18vw;
     left: 0;
     width: 27vw;
-    height: 17.353vw;
+    height: 17.353vw; */
 }
 
 .bottle_02{
-    left: 54vw;
+    /* transform: translate(12%, -156%); */
+    /* left: 54vw;
     transform: translateX(-50%);
     top: 0;
     width: 7.981vw;
-    height: 18.646vw;
+    height: 18.646vw; */
 }
 
 .bottle_03{
-    top: 35vw;
+    /* transform: translate(60%, 102%); */
+    /* top: 35vw;
     right: 0;
     width: 27.653vw;
-    height: 6.469vw;
+    height: 6.469vw; */
 }
 
 .bobbin{
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
+    /* transition: all cubic-bezier(0.19, 1, 0.22, 1)3s; */
 }
 
 .bobbin_01{
-    width: 13.202vw;
+    /* width: 13.202vw;
     height: 16.057vw;
     right: 37vw;
-    top: 23vw;
+    top: 23vw; */
+    /* transform: translate(-12%, -5%); */
     z-index: 1;
 }
 
 .bobbin_02{
-    width: 14.666vw;
+    /* width: 14.666vw;
     height: 14.105vw;
     top: 32.646vw;
     left: 46vw;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
+    /* transform: translate(-82%, 45%); */
     z-index: 3;
 }
 
 .bobbin_03{
-    width: 14.886vw;
+    /* width: 14.886vw;
     height: 14.886vw;
     top: 23.646vw;
     left: 44.5vw;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
+    /* transform: translate(-83%, -10%); */
     z-index: 2;
 }
 
 .thread{
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
     z-index: 4;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
+    /* transition: all cubic-bezier(0.19, 1, 0.22, 1)3s; */
 }
 
 .thread_01{
-    top: 17.5vw;
+    /* top: 17.5vw;
     left: 49.8vw;
     transform: translateX(-50%);
     width: 2.685vw;
-    height: 6.712vw;
+    height: 6.712vw; */
+    /* transform: translate(-23%, -161%); */
 }
 
 .thread_02{
-    top: 33.5vw;
+    /* top: 33.5vw;
     left: 31vw;
     transform: translateX(-50%);
     width: 10.372vw;
-    height: 4.076vw;
+    height: 4.076vw; */
+    /* transform: translate(-248%, 125%); */
 }
 
 .thread_03{
-    top: 33.5vw;
+    /* top: 33.5vw;
     right: 22vw;
     transform: translateX(-50%);
     width: 8.615vw;
-    height: 3.857vw;
+    height: 3.857vw; */
+    /* transform: translate(163%, 182%); */
 }
 
 .thread_vector{
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
+    /* transition: all cubic-bezier(0.19, 1, 0.22, 1)3s; */
 }
 
 .thread_vector_01{
-    width: 6.955vw;
+    /* width: 6.955vw;
     height: 26.720vw;
     top: 39vw;
     left: 49vw;
     transform: translateX(-50%) scaleY(0);
-    transform-origin: top;
+    transform-origin: top; */
+    transform: translate(-85%, 69%);
 }
 
 .thread_vector_02{
-    width: 6.955vw;
+    /* width: 6.955vw;
     height: 29.283vw;
     top: 36.5vw;
     left: 52vw;
     transform: translateX(-50%) scaleY(0);
-    transform-origin: top;
+    transform-origin: top; */
+    transform: translate(-60%, 54%);
 }
 
 .thread_vector_03{
-    width: 6.955vw;
+    /* width: 6.955vw;
     height: 29.283vw;
     top: 36.5vw;
     left: 54vw;
     transform: translateX(-50%) scaleY(0);
-    transform-origin: top;
+    transform-origin: top; */
+    transform: translate(-36%, 54%);
 }
 
 .line_vector{
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
+    /* transition: all cubic-bezier(0.19, 1, 0.22, 1)3s; */
 }
 
 .line_vector_01{
-    width: 8.492vw;
+    /* width: 8.492vw;
     height: 2.123vw;
     top: 36.5vw;
-    left: 34vw;
+    left: 34vw; */
+    /* transform: translate(-227%, 609%); */
 }
 
 .line_vector_02{
-    width: 2vw;
+    /* width: 2vw;
     height: 6.272vw;
     top: 23vw;
     left: 48vw;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
+    /* transform: translate(-135%, -72%); */
 }
 
 .line_vector_03{
-    width: 7.053vw;
+    /* width: 7.053vw;
     height: 1.5vw;
     right: 33vw;
-    top: 33.3vw;
+    top: 33.3vw; */
+    /* transform: translate(123%, 512%); */
 }
 
 .marquee{
@@ -1421,7 +1453,7 @@ footer{
 
 .next_generation_area .next_gen_fabric{
     position: fixed;
-    top: 65%;
+    top: 50%;
     transform: translateY(-50%) scaleX(0);
     opacity: 0;
     transform-origin: left;

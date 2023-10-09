@@ -281,6 +281,12 @@ $(document).ready(function(){
         
     }
 
+  
+
+
+            
+            
+
     $('.count-up').countUp({
         'time': 2000,
     });

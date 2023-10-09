@@ -1017,651 +1017,209 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
 
-            gsap.registerPlugin(ScrollTrigger);
+              // Textile Banner Animation
+                gsap.registerPlugin(ScrollTrigger);
+                let textile = gsap.timeline({
+                    scrollTrigger:{
+                        trigger: ".thread_animation",
+                        markers: true,
+                        start: "10% 10%",
+                        end: "110% 50%",
+                        scrub: true,
+                        pin: true,
+                    }
+                })
 
-            let t1 = gsap.timeline({
-                scrollTrigger:{
-                    trigger: ".thread_animation",
-                    //markers: true,
-                    start: "10% 10%",
-                    end: "110% 50%",
-                    scrub: true,
-                    pin: true
-                }
-            })
+                textile.to(".bottle_01", {
+                    opacity: 1,
+                    translateX: "-96%",
+                    translateY: "0%",
+                    duration: 500,
+                }, "bottle_one_anim")
 
-            t1.to('.bottle_img',{
-                opacity: 0.4,
-                duration: 100,
-                
-            })
-            .to('.thread',{
-                opacity: 0.2,
-                duration: 100,
-                
-            })
-            .to('.bottle_img',{
-                opacity: 0.8,
-                duration: 100,
-                
-            })
-            .to('.thread',{
-                opacity: 0.4,
-                duration: 100,
-                
-            })
-            .to('.bottle_img',{
-                opacity: 1,
-                duration: 100,
-                
-            })
-            .to('.thread',{
-                opacity: 0.6,
-                duration: 100,
-                
-            })
-            .to('.line_vector',{
-                opacity: 0.3,
-                duration: 100,
-                
-            })
+                textile.to(".bottle_02", {
+                    opacity: 1,
+                    translateX: "70%",
+                    translateY: "-122%",
+                    duration: 500,
+                }, "bottle_one_anim")
 
-            .to('.thread',{
-                opacity: 0.8,
-                duration: 100,
-                
-            })
-            .to('.line_vector',{
-                opacity: 0.6,
-                duration: 100,
-                
-            })
+                textile.to(".bottle_03", {
+                    opacity: 1,
+                    translateX: "109%",
+                    translateY: "175%",
+                    duration: 500,
+                }, "bottle_one_anim")
 
-            .to('.thread',{
-                opacity: 1,
-                duration: 100,
-                
-            })
-            .to('.line_vector',{
-                opacity: 0.8    ,
-                duration: 100,
-                
-            })
-            .to('.bobbin',{
-                opacity: 0.3,
-                duration: 100,
-                
-            })
-            .to('.line_vector',{
-                opacity: 1,
-                duration: 100,
-                
-            })
-            .to('.bobbin',{
-                opacity: 0.2,
-                duration: 100,
-                
-            })
+                textile.to(".thread_01", {
+                    opacity: 1,
+                    translateX: "45%",
+                    translateY: "-153%",
+                    duration: 500,
+                }, "thread_one_anim")
 
+                textile.to(".thread_02", {
+                    opacity: 1,
+                    translateX: "-137%",
+                    translateY: "243%",
+                    duration: 500,
+                }, "thread_one_anim")
 
+                textile.to(".thread_03", {
+                    opacity: 1,
+                    translateX: "205%",
+                    translateY: "279%",
+                    duration: 500,
+                }, "thread_one_anim")
 
-            t1.to('.bottle_02',{
-                opacity: 0.7,
-                translateY: "-5vw",
-                duration: 100,
                 
-            },"bottle_translate_01")
-            t1.to('.bottle_01',{
-                opacity: 0.7,
-                translateX: "-5vw",
-                duration: 100,
-                
-            },"bottle_translate_01")
-            t1.to('.bottle_03',{
-                opacity: 0.7,
-                translateX: "5vw",
-                duration: 100,
-                
-            },"bottle_translate_01")
-            t1.to('.thread_01',{
-                opacity: 0.7,
-                translateY: "-5vw",
-                duration: 100,
-                
-            },"bottle_translate_01")
-            t1.to('.thread_02',{
-                opacity: 0.7,
-                translateX: "-5vw",
-                duration: 100,
-                
-            },"bottle_translate_01")
-            t1.to('.thread_03',{
-                opacity: 0.7,
-                translateX: "5vw",
-                duration: 100,
-                
-            },"bottle_translate_01")
-            .to('.line_vector_02',{
-                opacity: 0.7,
-                translateY: "-5vw",
-                duration: 100,
-            },"bottle_translate_01")
-            .to('.line_vector_01',{
-                opacity: 0.7,
-                translateX: "-5vw",
-                duration: 100,
-            },"bottle_translate_01")
-            .to('.line_vector_03',{
-                opacity: 0.7,
-                translateX: "5vw",
-                duration: 100,
-            },"bottle_translate_01")
 
+                textile.to(".line_vector_01", {
+                    opacity: 1,
+                    translateX: "-97%",
+                    translateY: "816%",
+                    duration: 500,
+                }, "line_thread_one_anim")
 
+                textile.to(".line_vector_02", {
+                    opacity: 1,
+                    translateX: "-35%",
+                    translateY: "-72%",
+                    duration: 500,
+                }, "line_thread_one_anim")
 
+                textile.to(".line_vector_03", {
+                    opacity: 1,
+                    translateX: "164%",
+                    translateY: "700%",
+                    duration: 500,
+                }, "line_thread_one_anim")
 
-            .to('.bobbin',{
-                opacity: 0.4,
-                duration: 100,
-                
-            })
+               
 
+                textile.to(".bobbin_01", {
+                    opacity: 1,
+                    translateX: "24%",
+                    translateY: "58%",
+                    duration: 500,
+                }, "bobbin_one_anim")
 
+                textile.to(".bobbin_02", {
+                    opacity: 1,
+                    translateX: "-35%",
+                    translateY: "115%",
+                    duration: 500,
+                }, "bobbin_one_anim")
 
+                textile.to(".bobbin_03", {
+                    opacity: 1,
+                    translateX: "-40%",
+                    translateY: "56%",
+                    duration: 500,
+                }, "bobbin_one_anim")
 
-            t1.to('.bottle_02',{
-                opacity: 0.5,
-                translateY: "-10vw",
-                duration: 100,
-                
-            },"bottle_translate_02")
-            t1.to('.bottle_01',{
-                opacity: 0.5,
-                translateX: "-10vw",
-                duration: 100,
-                
-            },"bottle_translate_02")
-            t1.to('.bottle_03',{
-                opacity: 0.5,
-                translateX: "10vw",
-                duration: 100,
-                
-            },"bottle_translate_02")
-            t1.to('.thread_01',{
-                opacity: 0.5,
-                translateY: "-10vw",
-                duration: 100,
-                
-            },"bottle_translate_02")
-            t1.to('.thread_02',{
-                opacity: 0.5,
-                translateX: "-10vw",
-                duration: 100,
-                
-            },"bottle_translate_02")
-            t1.to('.thread_03',{
-                opacity: 0.5,
-                translateX: "10vw",
-                duration: 100,
-                
-            },"bottle_translate_02")
-            .to('.line_vector_02',{
-                opacity: 0.5,
-                translateY: "-10vw",
-                duration: 100,
-            },"bottle_translate_02")
-            .to('.line_vector_01',{
-                opacity: 0.5,
-                translateX: "-10vw",
-                duration: 100,
-            },"bottle_translate_02")
-            .to('.line_vector_03',{
-                opacity: 0.5,
-                translateX: "10vw",
-                duration: 100,
-            },"bottle_translate_02")
+                textile.to(".bottle_01", {
+                    opacity: 0,
+                }, "bobbin_one_anim")
+
+                textile.to(".bottle_02", {
+                    opacity: 0,
+                }, "bobbin_one_anim")
+
+                textile.to(".bottle_03", {
+                    opacity: 0,
+                }, "bobbin_one_anim")
+
+                textile.to(".thread_01", {
+                    opacity: 0,
+                }, "bobbin_one_anim")
+
+                textile.to(".thread_02", {
+                    opacity: 0,
+                }, "bobbin_one_anim")
+
+                textile.to(".thread_03", {
+                    opacity: 0,
+                }, "bobbin_one_anim")
+
+                textile.to(".line_vector_01", {
+                    opacity: 0,
+                }, "bobbin_one_anim")
+
+                textile.to(".line_vector_02", {
+                    opacity: 0,
+                }, "bobbin_one_anim")
+
+                textile.to(".line_vector_03", {
+                    opacity: 0,
+                }, "bobbin_one_anim")
+
+                textile.to(".thread_vector_01", {
+                    opacity: 1,
+                    duration: 500,
+                }, "thread_vector_one_anim")
+
+                textile.to(".thread_vector_02", {
+                    opacity: 1,
+                    duration: 500,
+                }, "thread_vector_one_anim")
+
+                textile.to(".thread_vector_03", {
+                    opacity: 1,
+                    duration: 500,
+                }, "thread_vector_one_anim")
 
 
-            .to('.bobbin',{
-                opacity: 0.7,
-                duration: 100,
-                
-            })
+                textile.to(".next_gen_fabric",{
+                    opacity: 1,
+                    scaleX: 1,
+                    duration: 800,
+                }, "fabric_one_anim")
 
-            t1.to('.bottle_02',{
-                opacity: 0.3,
-                translateY: "-15vw",
-                duration: 100,
-                
-            },"bottle_translate_03")
-            t1.to('.bottle_01',{
-                opacity: 0.3,
-                translateX: "-15vw",
-                duration: 100,
-                
-            },"bottle_translate_03")
-            t1.to('.bottle_03',{
-                opacity: 0.3,
-                translateX: "15vw",
-                duration: 100,
-                
-            },"bottle_translate_03")
-            t1.to('.thread_01',{
-                opacity: 0.3,
-                translateY: "-15vw",
-                duration: 100,
-                
-            },"bottle_translate_03")
-            t1.to('.thread_02',{
-                opacity: 0.3,
-                translateX: "-15vw",
-                duration: 100,
-                
-            },"bottle_translate_03")
-            t1.to('.thread_03',{
-                opacity: 0.3,
-                translateX: "15vw",
-                duration: 100,
-                
-            },"bottle_translate_03")
-            .to('.line_vector_02',{
-                opacity: 0.3,
-                translateY: "-15vw",
-                duration: 100,
-            },"bottle_translate_03")
-            .to('.line_vector_01',{
-                opacity: 0.3,
-                translateX: "-15vw",
-                duration: 100,
-            },"bottle_translate_03")
-            .to('.line_vector_03',{
-                opacity: 0.3,
-                translateX: "15vw",
-                duration: 100,
-            },"bottle_translate_03")
+                textile.to(".bobbin_01", {
+                    opacity: 0,
+                    duration: 500,
+                }, "fabric_one_anim")
 
+                textile.to(".bobbin_02", {
+                    opacity: 0,
+                    duration: 500,
+                }, "fabric_one_anim")
 
+                textile.to(".bobbin_03", {
+                    opacity: 0,
+                    duration: 500,
+                }, "fabric_one_anim")
 
-            .to('.bobbin',{
-                opacity: 0.9,
-                duration: 100,
-                
-            })
+                textile.to(".thread_vector_01", {
+                    opacity: 0,
+                    duration: 500,
+                }, "fabric_one_anim")
 
+                textile.to(".thread_vector_02", {
+                    opacity: 0,
+                    duration: 500,
+                }, "fabric_one_anim")
 
+                textile.to(".thread_vector_03", {
+                    opacity: 0,
+                    duration: 500,
+                }, "fabric_one_anim")
 
-            t1.to('.bottle_02',{
-                opacity: 0,
-                translateY: "-50vw",
-                duration: 100,
-                
-            },"bottle_translate_04")
-            t1.to('.bottle_01',{
-                opacity: 0,
-                translateX: "-50vw",
-                duration: 100,
-                
-            },"bottle_translate_04")
-            t1.to('.bottle_03',{
-                opacity: 0,
-                translateX: "50vw",
-                duration: 100,
-                
-            },"bottle_translate_04")
-            t1.to('.thread_01',{
-                opacity: 0,
-                translateY: "-50vw",
-                duration: 100,
-                
-            },"bottle_translate_04")
-            t1.to('.thread_02',{
-                opacity: 0,
-                translateX: "-50vw",
-                duration: 100,
-                
-            },"bottle_translate_04")
-            t1.to('.thread_03',{
-                opacity: 0,
-                translateX: "50vw",
-                duration: 100,
-                
-            },"bottle_translate_04")
-            .to('.line_vector_02',{
-                opacity: 0,
-                translateY: "-50vw",
-                duration: 100,
-            },"bottle_translate_04")
-            .to('.line_vector_01',{
-                opacity: 0,
-                translateX: "-50vw",
-                duration: 100,
-            },"bottle_translate_04")
-            .to('.line_vector_03',{
-                opacity: 0,
-                translateX: "50vw",
-                duration: 100,
-            },"bottle_translate_04")
+                textile.to(".next_gen_subtitle", {
+                    opacity: 1,
+                    translateY: "0",
+                    delay: .5,
+                    duration: 0.8,
+                })
+                textile.to(".next_gen_title", {
+                    opacity: 1,
+                    translateY: "-2px",
+                    delay: .5,
+                    duration: 0.8,
+                })
 
-            .to('.bobbin',{
-                opacity: 1,
-                duration: 100,
-                
-            })
-
-            .to('.thread_vector',{
-                opacity: 0.2,
-                scale: 0.2,
-                duration: 100,
-                
-            })
-
-            .to('.bobbin',{
-                opacity: 1,
-                duration: 100,
-                
-            })
-
-            .to('.thread_vector',{
-                opacity: 0.2,
-                scale: 0.4,
-                duration: 100,
-                
-            })
-
-            .to('.bobbin',{
-                opacity: 1,
-                duration: 100,
-                translateY: "-2vw"
-                
-            })
-
-            .to('.thread_vector',{
-                opacity: 0.4,
-                scale: 0.4,
-                duration: 100,
-                translateY: "-2vw"
-                
-            })
-
-            .to('.bobbin',{
-                opacity: 1,
-                duration: 100,
-                
-            })
-
-            .to('.thread_vector',{
-                opacity: 0.6,
-                scale: 0.6,
-                duration: 100,
-                
-            })
-
-            .to('.bobbin',{
-                opacity: 0.9,
-                duration: 100,
-                translateY: "-6vw",
-                
-            })
-
-            .to('.thread_vector',{
-                opacity: 0.7,
-                scale: 0.6,
-                translateY: "-6vw",
-                duration: 100,
-                
-            })
-
-            .to('.bobbin',{
-                opacity: 0.9,
-                duration: 100,
-                translateY: "-8vw",
-                
-            })
-
-            .to('.thread_vector',{
-                opacity: 0.9,
-                scale: 0.8,
-                translateY: "-8vw",
-                duration: 100,
-                
-            })
-
-            .to('.bobbin',{
-                opacity: 0.9,
-                duration: 100,
-                translateY: "-9vw",
-                
-            })
-
-            .to('.thread_vector',{
-                opacity: 1,
-                scale: 0.9,
-                translateY: "-9vw",
-                duration: 100,
-                
-            })
-
-            .to('.bobbin',{
-                opacity: 0.9,
-                duration: 100,
-                translateY: "-12vw",
-                
-            })
-
-            .to('.thread_vector',{
-                opacity: 1,
-                scale: 1,
-                translateY: "-12vw",
-                duration: 100,
-                
-            })
-
-            .to('.bobbin',{
-                opacity: 0.9,
-                duration: 100,
-                translateY: "-15vw",
-                
-            })
-
-            .to('.thread_vector',{
-                opacity: 0.9,
-                scale: 1,
-                translateY: "-15vw",
-                duration: 100,
-                
-            })
-
-            .to('.bobbin',{
-                opacity: 0.6,
-                duration: 100,
-                translateY: "-25vw",
-                
-            }, "fabric_appear_01")
-
-            .to('.thread_vector',{
-                opacity: 0.5,
-                scale: 1,
-                translateY: "-25vw",
-                duration: 100,
-                
-            }, "fabric_appear_01")
-            .to(".next_gen_fabric",{
-                opacity: 0.1,
-                scaleX: 0.1,
-                top: "60%",
-                ease: Power3.easeInOut,
-            }, "fabric_appear_01")
-
-            .to('.bobbin',{
-                opacity: 0.3,
-                duration: 100,
-                translateY: "-35vw",
-                
-            }, "fabric_appear_02")
-
-            .to('.thread_vector',{
-                opacity: 0.3,
-                scale: 1,
-                translateY: "-35vw",
-                duration: 100,
-                
-            }, "fabric_appear_02")
-            .to(".next_gen_fabric",{
-                opacity: 0.3,
-                scaleX: 0.3,
-                top: "58%",
-                ease: Power3.easeInOut,
-            }, "fabric_appear_02")
-
-            .to('.bobbin',{
-                opacity: 0.2,
-                duration: 100,
-                translateY: "-40vw",
-                
-            }, "fabric_appear_03")
-
-            .to('.thread_vector',{
-                opacity: 0.3,
-                scale: 1,
-                translateY: "-40vw",
-                duration: 100,
-                
-            }, "fabric_appear_03")
-
-            .to(".next_gen_fabric",{
-                opacity: 0.5,
-                scaleX: 0.5,
-                top: "55%",
-                ease: Power3.easeInOut,
-            }, "fabric_appear_03")
-
-            .to('.bobbin',{
-                opacity: 0,
-                duration: 100,
-                translateY: "-45vw",
-            }, "fabric_appear_04")
-
-            .to('.thread_vector',{
-                opacity: 0.2,
-                scale: 1,
-                translateY: "-40vw",
-                duration: 100,
-            }, "fabric_appear_04")
-            .to(".next_gen_fabric",{
-                opacity: 0.7,
-                scaleX: 0.7,
-                top: "50%",
-                ease: Power3.easeInOut,
-            }, "fabric_appear_04")
-            .to('.thread_vector',{
-                opacity: 0.1,
-                scale: 1,
-                translateY: "-45vw",
-                duration: 100,
-            }, "fabric_appear_05")
-            .to(".next_gen_fabric",{
-                opacity: 1,
-                scaleX: 0.9,
-                top: "50%",
-                ease: Power3.easeInOut,
-            }, "fabric_appear_05")
-
-            .to('.thread_vector',{
-                opacity: 0.1,
-                scale: 1,
-                translateY: "-47vw",
-                duration: 100,
-            }, "fabric_appear_05")
-            .to(".next_gen_fabric",{
-                opacity: 1,
-                scaleX: 1,
-                top: "50%",
-                ease: Power3.easeInOut,
-            }, "fabric_appear_05")
-
-            .to(".next_gen_subtitle",{
-                opacity: 1,
-                translateY: "0",
-            }, "text_appear_01")
-
-            .to(".next_gen_title",{
-                opacity: 1,
-                translateY: "-1vw",
-            }, "text_appear_01")
-
-            .to('.thread_vector',{
-                opacity: 0.1,
-                scale: 1,
-                translateY: "-50vw",
-                duration: 100,
-            }, "fabric_appear_06")
             
-            .to(".next_gen_fabric",{
-                scaleX: 1,
-                top: "50%",
-            }, "fabric_appear_06")
-            
-
-            .to(".next_gen_subtitle",{
-                opacity: 0.7,
-                translateY: "0",
-                duration: 100,
-            }, "text_appear_02")
-
-            .to(".next_gen_title",{
-                opacity: 0.7,
-                translateY: "-1vw",
-                duration: 100,
-            }, "text_appear_02")
-
-            .to(".next_gen_fabric",{
-                scale: 1.1,
-                duration: 100
-            })
-
-
-            .to(".next_gen_fabric",{
-                opacity: 0.7,
-                scale: 1.2,
-                translateY: "-5vw",
-                duration: 100
-            })
-            
-            .to(".next_gen_subtitle",{
-                opacity: 0.7,
-                translateY: "-10vw",
-                duration: 100,
-            }, "text_appear_03")
-
-            .to(".next_gen_title",{
-                opacity: 0.7,
-                translateY: "-100vw",
-                duration: 100,
-            }, "text_appear_03")
-
-            .to(".next_gen_fabric",{
-                scale: 1.2,
-                duration: 100
-            })
-
-            .to('.thread_vector',{
-                opacity: 0,
-                scale: 1,
-                translateY: "-55vw",
-                duration: 100
-            }, "fabric_appear_08")
-
-            .to(".next_gen_fabric",{
-                opacity: 0,
-                scale: 1.2,
-                duration: 100
-            }, "fabric_appear_08")
-
-            // .to(".thread_animation", {
-            //     opacity: 0,
-            //     translateY: "-100vw",
-            //     duration: 100,
-            // })
             
 
             const sectionOneTl = gsap.timeline({
