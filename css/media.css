@@ -59,6 +59,10 @@
     .desktop_view_area{
         display: block;
     }
+
+    .small_screen_view{
+        display: none;
+    }
 }
 
 @media (max-width: 1280px){
