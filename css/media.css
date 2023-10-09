@@ -999,6 +999,11 @@
         font-size: 44px;
         line-height: 74px;
     }
+
+    .main_navbar .left_navbar .logo_area img {
+        display: block;
+        max-height: 7.441860465116279vh;
+    }
 }
 
 @media (max-width: 600px){
