@@ -1,3 +1,15 @@
+@media (max-width: 1730px){
+    .about_group_area .about_group_flex .left_about_group,
+    .about_group_area .about_group_flex .right_about_group{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .about_group_area .about_group_flex .left_about_group .about_group_content .about_content_para{
+        padding-right: 10vw;
+    }
+}
+
 @media (min-width: 1480px){
     .content_container{
         /* max-width: 1366px; */
@@ -25,6 +37,11 @@
         max-width: 90%;
         margin-left: auto;
     }
+
+    .about_timeline_area .about_timeline_yr .owl-nav,
+    .dodhia_past_events .owl-nav{
+        width: 89%;
+    }
 }
 
 @media (max-width: 1480px){
@@ -35,6 +52,12 @@
 
     .about_main_area{
         padding: 19.571vw 0 11.458vw;
+    }
+}
+
+@media (min-width: 1280px){
+    .desktop_view_area{
+        display: block;
     }
 }
 
@@ -92,6 +115,102 @@
         font-size: 22px;
         line-height: 26px;
     }
+
+    .csr_grid{
+        padding: 45px 0;
+        margin: 0;
+        margin-top: -6.511627906976744vh;
+    }
+
+    .contact_us_flex .left_details_area,
+    .contact_us_flex .right_details_area{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .latest_news_container .latest_news_flex .lastest_news_text,
+    .latest_news_container .latest_news_flex .lastest_news_img,
+    .career_info_area .career_info_flex .left_career_info,
+    .career_info_area .career_info_flex .right_career_info{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .career_info_area .career_info_flex .left_career_info{
+        padding-right: 15px;
+    }
+
+    .latest_news_container .latest_news_flex .lastest_news_text .latest_news_date,
+    .career_footer_thumbnail_area p,
+    .research_development_flex .research_dev_top_section .middle_text_container p,
+    .research_development_flex .research_dev_bottom_section .middle_text_container p,
+    .main_footer_area .footer_column .footer_header h3,
+    .our_recycling_products_flex .recycling_products_container .recycling_product_box .recycling_product_txt h2{
+        font-size: 22px;
+    }
+
+    .latest_news_container .latest_news_flex .lastest_news_text .latest_news_heading,
+    .research_development_flex .research_dev_top_section .middle_text_container h2,
+    .research_development_flex .research_dev_bottom_section .middle_text_container h2{
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .career_footer_thumbnail_area h2{
+        font-size: 50px;
+        line-height: 56px;
+    }
+
+    .career_footer_thumbnail_area .content_container{
+        top: 8.186046511627907vh;
+    }
+
+
+    .career_footer_thumbnail_area {
+        height: 55vh;
+    }
+
+    .career_footer_thumbnail_area img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .service_row .service_content h3,
+    .innovate_flex .innovate_content h2,
+    .page_header{
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .service_row .service_content{
+        padding: 55px 90px 134px 400px;
+    }
+    .service_row:nth-child(2) .service_content{
+        padding: 55px 400px 134px 90px;
+    }
+
+    .product_banner_area .product_banner_title span{
+        font-size: 54px;
+        line-height: 64px;
+    }
+
+    .product_banner_area .product_banner_title{
+        font-size: 86px;
+    }
+
+    .grid .right_product_desc .product_desc_panel .left_area_info p.left_area_info_para{
+        padding-left: 0;
+    }
+
+    .sectors_desc_panel .sectors_img_icon .sector_icon{
+        width: 160px;
+        top: 30px;
+    }
+
+    .recycling_certifications_flex{
+        max-width: 100%;
+    }
 }
 
 
@@ -144,7 +263,26 @@
     .awards_area .presentation_txt p,
     .textile_stat_area .textile_stat_para,
     .textile_stat_flex .textile_stat .textile_stat_txt h3,
-    .market_loction_world .american_market h2, .market_loction_world .middleeast_market h2, .market_loction_world .asian_market h2, .market_loction_world .europian_market h2, .market_loction_world .indian_market h2{
+    .market_loction_world .american_market h2, .market_loction_world .middleeast_market h2, .market_loction_world .asian_market h2, .market_loction_world .europian_market h2, .market_loction_world .indian_market h2,
+    .team_member_grid .team_member_container .team_member_box .team_member_content h3,
+    .help_form_floating .help_form_heading span,
+    .help_form_floating .help_form_heading svg,
+    .contact_us_flex .left_details_area p,
+    .call_email_area a,
+    .latest_news_container .latest_news_flex .lastest_news_text .latest_news_date,
+    .news_grid .new_column .news_box .new_content .news_date,
+    .news_grid .new_column .news_box .new_content .news_text,
+    .dodhia_event_left h3,
+    .dodhia_event_left ul li p span:nth-child(1),
+    .career_footer_thumbnail_area p,
+    .chemical_intro_area p,
+    .research_development_flex .research_dev_top_section .top_sec_para p:nth-child(1),
+    .research_development_flex .research_dev_bottom_section .top_sec_para p:nth-child(1),
+    .research_development_flex .research_dev_top_section .middle_text_container p,
+    .research_development_flex .research_dev_bottom_section .middle_text_container p,
+    .main_footer_area .footer_column .footer_header h3,
+    .our_recycling_products_flex .recycling_products_container .recycling_product_box .recycling_product_txt h2,
+    .certfication_line{
         font-size: 20px;
         line-height: 25px;
     }
@@ -188,6 +326,241 @@
         max-width: 25%;
         margin-bottom: 20px;
     }
+
+    .about_group_area .about_group_flex .left_about_group .about_group_content .heading{
+        font-size: 50px;
+    }
+
+    .about_group_area .about_group_flex .left_about_group .about_group_content .sub_heading{
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .team_member_grid .team_member_container{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+
+    .awards_accrediation_flex .award_accrediation_box{
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    .csr_grid .csr_container{
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .csr_grid .csr_container:nth-child(2){
+        border-right: none;
+    }
+
+    .help_form_floating{
+        bottom: -712px;
+    }
+
+    
+    .contact_us_flex .left_details_area{
+        padding-right: 35px;
+    }
+
+    .contact_us_flex .left_details_area h2{
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .latest_news_container .latest_news_flex .lastest_news_text .latest_news_heading{
+        font-size: 28px;
+        line-height: 34px;
+        padding-right: 15px;
+    }
+
+    .news_grid .new_column{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .research_development_flex .research_dev_top_section .middle_text_container,
+    .research_development_flex .research_dev_bottom_section .middle_text_container{
+        position: absolute;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .research_development_flex .research_dev_top_section .top_sec_para, 
+    .research_development_flex .research_dev_bottom_section .top_sec_para, 
+    .research_development_flex .research_dev_top_section .img_container, 
+    .research_development_flex .research_dev_bottom_section .img_container{
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+
+    .research_development_flex .research_dev_top_section .img_container, 
+    .research_development_flex .research_dev_bottom_section .img_container{
+        margin-top: 130px;
+    }
+
+    .research_development_flex .research_dev_top_section .top_sec_para, 
+    .research_development_flex .research_dev_bottom_section .top_sec_para {
+        margin-top: 65px;
+    }
+
+    .research_development_flex .research_dev_bottom_section .middle_text_container{
+        right: 0;
+    }
+
+    
+
+    .research_development_flex .research_dev_top_section .middle_text_container p,
+    .research_development_flex .research_dev_top_section .middle_text_container h2{
+        text-align: left;
+        width: 100%;
+    }
+    .research_development_flex .research_dev_bottom_section .middle_text_container p,
+    .research_development_flex .research_dev_bottom_section .middle_text_container h2{
+        text-align: right;
+        width: 100%;
+    }
+
+    .research_development_flex .research_dev_top_section .middle_text_container h2,
+    .research_development_flex .research_dev_bottom_section .middle_text_container h2{
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .research_dev_dot_molecule{
+        width: 80vw;
+        top: 85% !important;
+    }
+    
+    .service_row .service_img img{
+        max-width: 70%;
+    }
+
+    .service_row .service_content{
+        padding: 55px 50px 134px 290px;
+    }
+    .service_row:nth-child(2) .service_content{
+        padding: 55px 290px 134px 50px;
+    }
+
+    .service_row .service_content h3,
+    .innovate_flex .innovate_content h2
+    .page_header{
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .service_row:nth-child(2) .service_img{
+        text-align: right;
+    }
+
+    .grid .right_product_desc .product_desc_panel.active{
+        flex-direction: column-reverse;
+    }
+
+    .grid .right_product_desc .product_desc_panel .right_area_img{
+        margin-bottom: 25px;
+    }
+
+    .grid .right_product_desc .product_desc_panel .right_area_img img{
+        right: unset;
+        left: 45px;
+        position: unset;
+    }
+
+    .grid .right_product_desc .product_desc_panel .left_area_info,
+    .grid .right_product_desc .product_desc_panel .right_area_img {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .grid .right_product_desc .product_desc_panel{
+        padding: 20px;
+    }
+
+    .product_banner_area .product_banner_title span{
+        font-size: 46px;
+        line-height: 56px;
+    }
+
+    .product_banner_area .product_banner_title{
+        font-size: 72px;
+    }
+    
+    .sectors_desc_panel .sectors_img_icon .sector_main_img{
+        width: 100%;
+    }
+
+    .sectors_para{
+        position: unset;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .sectors_desc_panel .sectors_img_icon .sector_icon{
+        max-width: 100px;
+        top: 15px;
+        right: 15px
+    }
+
+    .main_footer_flex .footer_col_container:nth-child(1),
+    .main_footer_flex .footer_col_container:nth-child(4),
+    .main_footer_flex .footer_col_container:nth-child(2),
+    .main_footer_flex .footer_col_container:nth-child(3){
+        flex: 0 0 25%;
+        max-width: 25%;
+        margin-bottom: 20px;
+    }
+
+    .main_footer_flex .footer_col_container:nth-child(5){
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .our_recycling_products_flex .recycling_products_container{
+        flex: 0 0 50%;
+        max-width: calc(50% - 0.521vw);
+    }
+
+    .right_navbar{
+        display: none;
+    }
+
+    .hambuger_menu{
+        display: block;
+    }
+
+    .plastic_recycling_banner .plastic_recycling_banner_content h2{
+        font-size: 80px;
+    }
+    
+    .plastic_recycling_banner .plastic_recycling_banner_content h2 span{
+        font-size: 100px;
+    }
+
+    .process_content p{
+        font-size: 42px;
+    }
+
+    .process_content p span{
+        font-size: 62px;
+    }
+
+    .step,
+.step_para{
+    font-size: 20px;
+    line-height: 28px;
+}
+
+
+
+.step_heading{
+    font-size: 54px;
+    line-height: 84px;
+}
+
 }
 
 
@@ -214,7 +587,26 @@
     .awards_area .presentation_txt p,
     .textile_stat_area .textile_stat_para,
     .textile_stat_flex .textile_stat .textile_stat_txt h3,
-    .market_loction_world .american_market h2, .market_loction_world .middleeast_market h2, .market_loction_world .asian_market h2, .market_loction_world .europian_market h2, .market_loction_world .indian_market h2 {
+    .market_loction_world .american_market h2, .market_loction_world .middleeast_market h2, .market_loction_world .asian_market h2, .market_loction_world .europian_market h2, .market_loction_world .indian_market h2,
+    .team_member_grid .team_member_container .team_member_box .team_member_content h3,
+    .help_form_floating .help_form_heading span,
+    .help_form_floating .help_form_heading svg,
+    .contact_us_flex .left_details_area p,
+    .call_email_area a,
+    .latest_news_container .latest_news_flex .lastest_news_text .latest_news_date,
+    .news_grid .new_column .news_box .new_content .news_date,
+    .news_grid .new_column .news_box .new_content .news_text,
+    .dodhia_event_left h3,
+    .dodhia_event_left ul li p span:nth-child(1),
+    .career_footer_thumbnail_area p,
+    .chemical_intro_area p,
+    .research_development_flex .research_dev_top_section .top_sec_para p:nth-child(1),
+    .research_development_flex .research_dev_bottom_section .top_sec_para p:nth-child(1),
+    .research_development_flex .research_dev_top_section .middle_text_container p,
+    .research_development_flex .research_dev_bottom_section .middle_text_container p,
+    .main_footer_area .footer_column .footer_header h3,
+    .our_recycling_products_flex .recycling_products_container .recycling_product_box .recycling_product_txt h2,
+    .certfication_line {
         font-size: 18px;
         line-height: 22px;
     }
@@ -273,6 +665,336 @@
     .market_loction_world.open_market_location{
         justify-content: flex-start;
     }
+
+    .about_group_area .about_group_flex .left_about_group,
+    .about_group_area .about_group_flex .right_about_group{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .about_group_area .about_group_flex .right_about_group{
+        margin-top: 3.7209302325581395vh;
+    }
+
+    .about_timeline_area .about_timeline_yr .item p{
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .about_timeline_area .about_timeline_yr .owl-nav{
+        top: -6.5vh;
+    }
+
+    .team_member_grid .team_member_container{
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+
+    .help_form_floating .help_form_content h3{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .contact_us_flex .left_details_area,
+    .contact_us_flex .right_details_area{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .contact_us_flex .left_details_area{
+        padding-right: 0;
+        padding-bottom: 40px;
+    }
+
+    .myContactForm .form_row .form_element{
+        flex: 0 0 50%;
+        max-width: calc(50% - 15px);
+    }
+
+    .latest_news_container .latest_news_flex{
+        flex-direction: column-reverse;
+    }
+
+    .latest_news_container .latest_news_flex .lastest_news_text,
+    .latest_news_container .latest_news_flex .lastest_news_img,
+    .dodhia_event_left,
+    .dodhia_event_right,
+    .career_info_area .career_info_flex .left_career_info,
+    .career_info_area .career_info_flex .right_career_info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .career_info_area .career_info_flex .left_career_info{
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .latest_news_container .latest_news_flex .lastest_news_img{
+        margin-bottom: 20px;
+    }
+
+    .contact_us_banner,
+    .newsroom_banner,
+    .newsroom_banner{
+        height: 300px;
+    }
+
+    .contact_us_banner img,
+    .newsroom_banner img,
+    .newsroom_banner img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .latest_news_container .latest_news_flex .lastest_news_text .latest_news_heading {
+        font-size: 24px;
+        line-height: 30px;
+        padding-right: 0px;
+    }
+
+    .dodhia_past_events .item h3{
+        left: 23px;
+    }
+    
+    .dodhia_past_events .item p{
+        left: 23px;
+    }
+
+    .career_footer_thumbnail_area h2{
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .research_development_flex .research_dev_top_section .top_sec_para, 
+    .research_development_flex .research_dev_bottom_section .top_sec_para, 
+    .research_development_flex .research_dev_top_section .img_container, 
+    .research_development_flex .research_dev_bottom_section .img_container{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+
+    .service_row .service_content{
+        max-width: 100%;
+    }
+
+    .service_row .service_content{
+        padding: 300px 30px 100px;
+    }
+    .service_row:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+    .service_row:nth-child(2) .service_content,
+    .service_row .service_content{
+        padding: 30px 15px;
+    }
+
+    .service_row .service_img{
+        position: relative;
+        top: 0;
+        transform: unset;
+    }
+
+    .service_row .service_img img{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .service_row .service_content h3, .innovate_flex .innovate_content h2,
+    .page_header{
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .grid{
+        flex-wrap: wrap;
+    }
+
+    .grid .left_product_list,
+    .grid .right_product_desc{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .grid .left_product_list .menu{
+        display: flex;
+        justify-content: space-between;
+        overflow-x: auto;
+    }
+
+    .grid .left_product_list .menu > div{
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+
+    .grid .left_product_list .menu > div:not(:last-child){
+        margin-right: 10px;
+    }
+
+    .properties_heading,
+    .grid .right_product_desc .product_desc_panel .left_area_info ul{
+        padding-left: 0;
+    }
+
+    .product_banner_area .product_banner_title span br{
+        display: none;
+    }
+
+    .product_banner_area .product_banner_title{
+        padding: 0 15px;
+    }
+
+    .product_banner_area .product_banner_title span{
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .chemical_product_banner,
+    .product_banner_area{
+        padding: 150px 0;
+    }
+
+    .naccs .menu div span{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    .product_banner_area .product_banner_title{
+        font-size: 60px;
+    }
+
+    .main_footer_flex .footer_col_container:nth-child(1),
+    .main_footer_flex .footer_col_container:nth-child(4),
+    .main_footer_flex .footer_col_container:nth-child(2),
+    .main_footer_flex .footer_col_container:nth-child(3){
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .help_form_floating{
+        bottom: -697px;
+    }
+
+    .recycling_certifications_flex div{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+
+    .mobile_main_menu ul li a span{
+        font-size: 54px;
+        line-height: 75px;
+    }
+    .mobile_other_links a{
+        font-size: 24px;
+    }
+
+    .plastic_recycling_banner .plastic_recycling_banner_content h2{
+        font-size: 60px;
+    }
+    
+    .plastic_recycling_banner .plastic_recycling_banner_content h2 span{
+        font-size: 80px;
+    }
+
+    .plastic_recycling_banner .banner_symbol{
+        width: 150px;
+        height: 150px;
+    }
+
+    .plastic_recycling_banner .banner_bottle{
+        width: unset;
+        height: unset;
+        max-width: 45%;
+        bottom: -35vh;
+    }
+
+    .how_it_works_area .how_it_works_content .black_vector_01{
+        object-fit: cover;
+        object-position: right;
+    }
+
+    .how_it_works_txt h3 span{
+        font-size: 16px;
+    }
+
+    .how_it_works_txt h3{
+        font-size: 30px;
+    }
+
+    .how_it_works_txt .scroll_btn span{
+        font-size: 14px;
+    }
+
+    .how_it_works_txt .scroll_btn svg{
+        width: 20px;
+        height: 20px;
+    }
+
+    .plastic_recycle_para{
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .plastic_recycle_stepone_area .step_one_content h3,
+    .plastic_recycle_steptwo_area .step_two_content h3,
+    .plastic_recycle_stepthree_area .step_three_content h3,
+    .plastic_recycle_stepfour_area .step_four_content h3,
+    .plastic_recycle_stepfive_area .step_five_content h3,
+    .plastic_recycle_stepsix_area .step_three_content h3{
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .plastic_recycle_stepone_area .step_one_content p,
+    .plastic_recycle_steptwo_area .step_two_content p,
+    .plastic_recycle_stepthree_area .step_three_content p,
+    .plastic_recycle_stepfour_area .step_four_content p,
+    .plastic_recycle_stepfive_area .step_five_content p,
+    .plastic_recycle_stepsix_area .step_three_content p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .font-75{
+        font-size: 65px;
+        line-height: normal;
+    }
+    
+    .font-85{
+        font-size: 75px;
+        line-height: normal;
+    }
+
+    .small_recycle_banner img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .small_recycle_bottle{
+        max-width: 200px;
+        top: -100px;
+    }
+
+    .process_content p{
+        font-size: 32px;
+    }
+
+    .process_content p span{
+        font-size: 52px;
+    }
+
+    .step,
+    .step_para{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    
+    
+    .step_heading{
+        font-size: 44px;
+        line-height: 74px;
+    }
 }
 
 @media (max-width: 600px){
@@ -313,5 +1035,188 @@
     .market_loction_world .indian_market{
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .team_member_grid .team_member_container{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .awards_accrediation_flex .award_accrediation_box{
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+
+    .csr_grid .csr_container{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .csr_grid .csr_container:nth-child(1),
+    .csr_grid .csr_container:nth-child(3){
+        border-right: none;
+    }
+
+    .help_form_floating{
+        max-width: 100%;
+    }
+
+    .help_form_floating .help_form_content{
+        padding: 40px 20px;
+    }
+
+    .help_form_floating .help_form_content h3{
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .myContactForm .form_row{
+        flex-wrap: wrap;
+    }
+
+    .myContactForm .form_row .form_element{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .contact_form_area .sec_header .title{
+        margin-top: 25px;
+    }
+
+    .news_grid .new_column{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .latest_news_container .latest_news_flex .lastest_news_text .latest_news_para{
+        padding-right: 0;
+    }
+
+    .dodhia_events_list{
+        padding-top: 50px;
+    }
+
+    .career_footer_thumbnail_area .content_container{
+        left: 5%;
+    }
+
+    .career_footer_thumbnail_area p{
+        padding-right: 15px;
+    }
+
+    .career_footer_thumbnail_area p br{
+        display: none;
+    }
+
+    .innovate_flex .innovate_img,
+    .innovate_flex .innovate_content{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .innovate_flex .innovate_content{
+        margin-top: 20px;
+    }
+
+    .grid .left_product_list .menu > div{
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+
+    .product_banner_area .product_banner_title{
+        font-size: 50px;
+    }
+
+    .help_form_floating .help_form_heading span{
+        font-size: 14px;
+        padding-left: 15px;
+    }
+
+    .our_recycling_products_flex .recycling_products_container{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .recycling_certifications_flex div{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .plastic_recycling_banner .plastic_recycling_banner_content h2{
+        font-size: 45px;
+    }
+    
+    .plastic_recycling_banner .plastic_recycling_banner_content h2 span{
+        font-size: 65px;
+    }
+
+    .plastic_recycling_banner{
+        padding: 300px 0 50px;
+    }
+
+    .plastic_recycling_banner .banner_symbol{
+        width: 100px;
+        height: 100px;
+    }
+
+    .font-75{
+        font-size: 45px;
+        line-height: normal;
+    }
+    
+    .font-85{
+        font-size: 62px;
+        line-height: normal;
+    }
+
+    .small_recycle_banner img{
+        width: 90px;
+        height: 90px;
+    }
+
+    .small_recycle_banner{
+        padding: 250px 0 150px;
+    }
+
+    .small_recycle_bottle{
+        max-width: 150px;
+        top: -100px;
+    }
+
+    .small_black_vector_01{
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .process_content{
+        padding: 0 10px;
+    }
+
+    .process_content p{
+        font-size: 22px;
+    }
+
+    .process_content p span{
+        font-size: 42px;
+    }
+
+    .recycle_process_three_content,
+    .recycle_process_five_content{
+        top: 20px;
+    }
+
+    .small_recycle_process_four{
+        padding: 150px 0;
+    }
+}
+
+@media (max-width: 480px){
+    .mobile_main_menu ul li a span{
+        font-size: 32px;
+        line-height: 52px;
+    }
+    .mobile_other_links a{
+        font-size: 16px;
     }
 }

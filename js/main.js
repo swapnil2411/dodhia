@@ -89,7 +89,7 @@ $(document).ready(function(){
         slideBy: 1,
         dots: true,
         // dotsEach: true,
-        items:4,
+        // items:4,
         responsive:{
             0:{
                 items:1
@@ -182,10 +182,10 @@ $(document).ready(function(){
         // dotsEach: true,
         responsive:{
             0:{
-                items:1
+                items:2.5
             },
             600:{
-                items:5
+                items:4.5
             },
             1000:{
                 items:7.5,
@@ -247,12 +247,24 @@ $(document).ready(function(){
         }
     }); //missing );
 
-    
-  
+    $(".hambuger_menu").on("click", function(){
+        $('.mobile_navmenu').addClass("show_mobile_menu");
+        setTimeout(() => {
+            $('.mobile_main_menu ul li a').addClass("show_main_links");
+            $('.mobile_other_links a').addClass("show_other_links");
+        }, 1000);
+        
+    })
 
-    $('.count-up').countUp({
-        'time': 2000,
-    });
+    $(".close_menu").on("click", function(){
+        $('.mobile_main_menu ul li a').removeClass("show_main_links");
+        $('.mobile_other_links a').removeClass("show_other_links");
+        setTimeout(() => {
+            $('.mobile_navmenu').removeClass("show_mobile_menu");
+        }, 1000);
+       
+    })
+    
 
 
     let windowLocation = window.location.href;
@@ -269,6 +281,8 @@ $(document).ready(function(){
         
     }
 
-
+    $('.count-up').countUp({
+        'time': 2000,
+    });
     
 })
