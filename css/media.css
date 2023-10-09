@@ -565,6 +565,19 @@
     line-height: 84px;
 }
 
+.map_market_btn .open_txt{
+    font-size: 16px;
+}
+
+.open_market_list{
+    height: 30px;
+    width: 30px;
+}
+
+.open_market_list svg{
+    font-size: 28px;
+}
+
 }
 
 
@@ -1003,6 +1016,65 @@
     .main_navbar .left_navbar .logo_area img {
         display: block;
         max-height: 7.441860465116279vh;
+    }
+
+    .map_market_btn .open_txt{
+        font-size: 14px;
+    }
+    
+    .open_market_list{
+        height: 24px;
+        width: 24px;
+    }
+    
+    .open_market_list svg{
+        font-size: 20px;
+    }
+
+    .line_one_img,
+    .line_two_img{
+        width: 15.5vw;
+        height: 15.5vw;
+    }
+
+    .line_one_img,
+    .line_two_img{
+        bottom: -12vw;
+    }
+
+    .line_one_first_img{
+        left: 1vw;
+        bottom: -4.5vw;
+    }
+
+    .line_one_fourth_img{
+        right: 1vw;
+        bottom: -4.5vw;
+    }
+
+    .line_one_second_img{
+        left: 25vw;
+    }
+
+    .line_one_third_img{
+        right: 25vw;
+    }
+
+    .line_two_first_img,
+    .line_two_fourth_img{
+        bottom: -4vw;
+    }
+
+    .line_two_first_img{
+        left: 1vw;
+    }
+
+    .line_two_fourth_img{
+        right: 1vw;
+    }
+    
+    .chemical_banner_middle_img{
+        max-width: 90%;
     }
 }
 

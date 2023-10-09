@@ -86,23 +86,31 @@
 
     <!-- Chemical Banner Animation Start -->
     <section class="chemical_banner_area">
-        <img src="img/line_one_first_img.png" alt="" class="line_one_img line_one_first_img">
-        <img src="img/line_one_second_img.png" alt="" class="line_one_img line_one_second_img">
-        <img src="img/line_one_third_img.png" alt="" class="line_one_img line_one_third_img">
-        <img src="img/line_one_fourth_img.png" alt="" class="line_one_img line_one_fourth_img">
+        <div class="svglineformation svglineformationone">
+            <img src="img/line_one_first_img.png" alt="" class="line_one_img line_one_first_img">
+            <img src="img/line_one_second_img.png" alt="" class="line_one_img line_one_second_img">
+            <img src="img/line_one_third_img.png" alt="" class="line_one_img line_one_third_img">
+            <img src="img/line_one_fourth_img.png" alt="" class="line_one_img line_one_fourth_img">
+            <svg class="lineSvgOne" xmlns="http://www.w3.org/2000/svg" width="1918" height="144" viewBox="0 0 1918 144" fill="none">
+                <path id="path" d="M0 1H420C431.046 1 440 9.95431 440 21V123C440 134.046 448.954 143 460 143H1460C1471.05 143 1480 134.046 1480 123V21C1480 9.9543 1488.95 1 1500 1H1918" stroke="black" stroke-opacity="0.5"/>
+            </svg>
+            <div class="pathOneOverlap pathOverlap"></div>
+        </div>
+       
         <img src="img/chemical_banner_middle_img.png" alt="chemical_banner_middle_img" class="chemical_banner_middle_img">
-        <img src="img/line_two_first_img.png" alt="" class="line_two_img line_two_first_img">
-        <img src="img/line_two_second_img.png" alt="" class="line_two_img line_two_second_img">
-        <img src="img/line_two_third_img.png" alt="" class="line_two_img line_two_third_img">
-        <img src="img/line_two_fourth_img.png" alt="" class="line_two_img line_two_fourth_img">
-        <svg class="lineSvgOne" xmlns="http://www.w3.org/2000/svg" width="1918" height="144" viewBox="0 0 1918 144" fill="none">
-            <path id="path" d="M0 1H420C431.046 1 440 9.95431 440 21V123C440 134.046 448.954 143 460 143H1460C1471.05 143 1480 134.046 1480 123V21C1480 9.9543 1488.95 1 1500 1H1918" stroke="black" stroke-opacity="0.5"/>
-        </svg>
-        <div class="pathOneOverlap pathOverlap"></div>
-        <svg class="lineSvgTwo" xmlns="http://www.w3.org/2000/svg" width="1918" height="144" viewBox="0 0 1918 144" fill="none">
-            <path id="path" d="M0 1H420C431.046 1 440 9.95431 440 21V123C440 134.046 448.954 143 460 143H1460C1471.05 143 1480 134.046 1480 123V21C1480 9.9543 1488.95 1 1500 1H1918" stroke="black" stroke-opacity="0.5"/>
-        </svg>
-        <div class="pathTwoOverlap pathOverlap"></div>
+
+        <div class="svglineformation svglineformationtwo">
+            <img src="img/line_two_first_img.png" alt="" class="line_two_img line_two_first_img">
+            <img src="img/line_two_second_img.png" alt="" class="line_two_img line_two_second_img">
+            <img src="img/line_two_third_img.png" alt="" class="line_two_img line_two_third_img">
+            <img src="img/line_two_fourth_img.png" alt="" class="line_two_img line_two_fourth_img">
+            
+            <svg class="lineSvgTwo" xmlns="http://www.w3.org/2000/svg" width="1918" height="144" viewBox="0 0 1918 144" fill="none">
+                <path id="path" d="M0 1H420C431.046 1 440 9.95431 440 21V123C440 134.046 448.954 143 460 143H1460C1471.05 143 1480 134.046 1480 123V21C1480 9.9543 1488.95 1 1500 1H1918" stroke="black" stroke-opacity="0.5"/>
+            </svg>
+            <div class="pathTwoOverlap pathOverlap"></div>
+        </div>
+        
         <marquee class="marquee_one marquee">Chemicals &nbsp; Chemicals &nbsp; Chemicals &nbsp; Chemicals</marquee>
         <marquee class="marquee_two marquee" direction="right">Nano Technology &nbsp; Nano Technology &nbsp; Nano Technology &nbsp; Nano Technology</marquee>
     </section>
@@ -700,7 +708,7 @@
                             <input type="email" name="email" id="email" placeholder="Email*" class="font-14">
                         </div>
                         <div class="form_element">
-                            <input type="number" name="mobile" id="mobile" placeholder="Mobile (Optional)" class="font-14">
+                            <input type="number" name="mobile" id="mobile" placeholder="Mobile*" class="font-14">
                         </div>
                         <div class="form_element">
                             <textarea name="message" id="message" rows="8" placeholder="Message" class="font-14"></textarea>
@@ -845,7 +853,7 @@
 
         gsap.registerPlugin(ScrollTrigger);
 
-        let t1 = gsap.timeline({    
+        let chemical = gsap.timeline({    
             scrollTrigger:{
                 trigger: ".chemical_banner_area",
                 //markers: true,
@@ -856,101 +864,212 @@
             }
         })
 
-        t1.to('.pathOneOverlap',{
-            translateX: "10vw",
-            duration: 1000,
-        }),
-        t1.to('.pathTwoOverlap',{
-            translateX: "-10vw",
-            duration: 1000,
-        }),
-        t1.to('.pathOneOverlap',{
-            translateX: "20vw",
-            duration: 1000,
-        }),
-        t1.to('.pathTwoOverlap',{
-            translateX: "-20vw",
-            duration: 1000,
-        }),
+        chemical.to(".pathOneOverlap", {
+            translateX: "100%",
+            duration: 8000,
+            delay: 1000,
+        }, "svgrevaeal")
 
-        t1.to('.pathOneOverlap',{
-            translateX: "40vw",
-            duration: 1000,
-        }),
-        t1.to('.pathTwoOverlap',{
-            translateX: "-40vw",
-            duration: 1000,
-        }),
-        t1.to('.pathOneOverlap',{
-            translateX: "70vw",
-            duration: 1000,
-        }),
-        t1.to('.pathTwoOverlap',{
-            translateX: "-70vw",
-            duration: 1000,
-        }),
-        t1.to('.pathOneOverlap',{
-            translateX: "100vw",
-            duration: 1000,
-        }),
-        t1.to('.pathTwoOverlap',{
-            translateX: "-100vw",
-            duration: 1000,
-        }),
+        chemical.to(".pathTwoOverlap", {
+            translateX: "-100%",
+            duration: 8000,
+            delay: 1000,
+        }, "svgrevaeal")
 
-        t1.to('.line_one_first_img',{
-            scale: 1,
+        chemical.to(".line_one_first_img", {
             opacity: 1,
-            duration: 2000
-        }),
-
-        t1.to('.line_one_second_img',{
             scale: 1,
-            opacity: 1,
-            duration: 2000
-        }),
-
-        t1.to('.line_one_third_img',{
-            scale: 1,
-            opacity: 1,
-            duration: 2000
-        }),
-
-        t1.to('.line_one_fourth_img',{
-            scale: 1,
-            opacity: 1,
-            duration: 2000
-        }),
-
-        t1.to('.line_two_fourth_img',{
-            scale: 1,
-            opacity: 1,
-            duration: 2000
-        }),
-
-        t1.to('.line_two_third_img',{
-            scale: 1,
-            opacity: 1,
-            duration: 2000
-        }),
-
-        t1.to('.line_two_second_img',{
-            scale: 1,
-            opacity: 1,
-            duration: 2000
+            duration: 1000,
+            delay: 800,
         })
-,
-        t1.to('.line_two_first_img',{
-            scale: 1,
-            opacity: 1,
-            duration: 2000
-        }),
 
-        t1.to('.chemical_banner_middle_img', {
-            translateY: 0,
+        chemical.to(".line_one_second_img", {
             opacity: 1,
-            duration: 2000
+            scale: 1,
+            duration: 1000,
+            delay: 800,
         })
+
+        chemical.to(".line_one_third_img", {
+            opacity: 1,
+            scale: 1,
+            duration: 1000,
+            delay: 800,
+        })
+
+        chemical.to(".line_one_fourth_img", {
+            opacity: 1,
+            scale: 1,
+            duration: 1000,
+            delay: 800,
+        })
+        
+        chemical.to(".line_two_first_img", {
+            opacity: 1,
+            scale: 1,
+            duration: 1000,
+            delay: 800,
+        })
+
+        chemical.to(".line_two_second_img", {
+            opacity: 1,
+            scale: 1,
+            duration: 1000,
+            delay: 800,
+        })
+
+        chemical.to(".line_two_third_img", {
+            opacity: 1,
+            scale: 1,
+            duration: 1000,
+            delay: 800,
+        })
+
+        chemical.to(".line_two_fourth_img", {
+            opacity: 1,
+            scale: 0.5,
+            duration: 1000,
+            delay: 800,
+        })
+
+        chemical.to(".chemical_banner_middle_img", {
+            opacity: 0.4,
+            scale: 0.4,
+            duration: 1000,
+            delay: 800,
+        })
+
+        chemical.to(".line_one_first_img", {
+            opacity: 0.6,
+            delay: 800,
+        }, "fadeoutimg")
+
+        chemical.to(".line_one_second_img", {
+            opacity: 0.6,
+            delay: 800,
+        }, "fadeoutimg")
+
+        chemical.to(".line_one_third_img", {
+            opacity: 0.6,
+        }, "fadeoutimg")
+
+        chemical.to(".line_one_fourth_img", {
+            opacity: 0.6,
+            delay: 800,
+        }, "fadeoutimg")
+        
+        chemical.to(".line_two_first_img", {
+            opacity: 0.6,
+            delay: 800,
+        }, "fadeoutimg")
+
+        chemical.to(".line_two_second_img", {
+            opacity: 0.6,
+            delay: 800,
+        }, "fadeoutimg")
+
+        chemical.to(".line_two_third_img", {
+            opacity: 0.6,
+            delay: 800,
+        }, "fadeoutimg")
+
+        chemical.to(".line_two_fourth_img", {
+            opacity: 0.6,
+            delay: 800,
+        }, "fadeoutimg")
+
+        chemical.to(".chemical_banner_middle_img", {
+            opacity: 0.7,
+            scale: 0.8,
+            duration: 1000,
+            delay: 800,
+        })
+
+        chemical.to(".line_one_first_img", {
+            opacity: 0.2,
+            delay: 800,
+        }, "fadeoutimgtwo")
+
+        chemical.to(".line_one_second_img", {
+            opacity: 0.2,
+            delay: 800,
+        }, "fadeoutimgtwo")
+
+        chemical.to(".line_one_third_img", {
+            opacity: 0.2,
+            delay: 800,
+        }, "fadeoutimgtwo")
+
+        chemical.to(".line_one_fourth_img", {
+            opacity: 0.2,
+            delay: 800,
+        }, "fadeoutimgtwo")
+        
+        chemical.to(".line_two_first_img", {
+            opacity: 0.2,
+            delay: 800,
+        }, "fadeoutimgtwo")
+
+        chemical.to(".line_two_second_img", {
+            opacity: 0.2,
+            delay: 800,
+        }, "fadeoutimgtwo")
+
+        chemical.to(".line_two_third_img", {
+            opacity: 0.2,
+            delay: 800,
+        }, "fadeoutimgtwo")
+
+        chemical.to(".line_two_fourth_img", {
+            opacity: 0.2,
+            delay: 800,
+        }, "fadeoutimgtwo")
+
+        chemical.to(".chemical_banner_middle_img", {
+            opacity: 1,
+            scale: 1,
+        })
+
+        chemical.to(".line_one_first_img", {
+            opacity: 0,
+            delay: 800,
+        }, "fadeoutimgthree")
+
+        chemical.to(".line_one_second_img", {
+            opacity: 0,
+            delay: 800,
+        }, "fadeoutimgthree")
+
+        chemical.to(".line_one_third_img", {
+            opacity: 0,
+            delay: 800,
+        }, "fadeoutimgthree")
+
+        chemical.to(".line_one_fourth_img", {
+            opacity: 0,
+            delay: 800,
+        }, "fadeoutimgthree")
+        
+        chemical.to(".line_two_first_img", {
+            opacity: 0,
+            delay: 800,
+        }, "fadeoutimgthree")
+
+        chemical.to(".line_two_second_img", {
+            opacity: 0,
+            delay: 800,
+        }, "fadeoutimgthree")
+
+        chemical.to(".line_two_third_img", {
+            opacity: 0,
+            delay: 800,
+        }, "fadeoutimgthree")
+
+        chemical.to(".line_two_fourth_img", {
+            opacity: 0,
+            delay: 800,
+        }, "fadeoutimgthree")
+
 
 
 

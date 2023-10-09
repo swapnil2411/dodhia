@@ -269,10 +269,10 @@ $(document).ready(function(){
 
     let windowLocation = window.location.href;
     if (windowLocation.includes("newsroom")){
-        $(".main_navbar .right_navbar nav ul li a").addClass("white_links")
+        // $(".main_navbar .right_navbar nav ul li a").addClass("white_links")
     }
     else if (windowLocation.includes("careers")){
-        $(".main_navbar .right_navbar nav ul li a").addClass("white_links")
+        // $(".main_navbar .right_navbar nav ul li a").addClass("white_links")
     }
     else if (windowLocation.includes("plasticrecycle")){
         $("header").addClass("plastic_recycle_header")
