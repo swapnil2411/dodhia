@@ -207,6 +207,8 @@ $(document).ready(function(){
     $('.open_market_list').on('click', function(){
         // $('.market_loction_world').addClass('open_market_location');
         $('.market_loction_world').toggleClass('open_market_location');
+        $(this).siblings(".open_txt").toggleClass("show_closeline");
+        $(this).toggleClass("close_market_list");
     })
     
     $('.close_market_map').on('click', function(){
@@ -227,6 +229,7 @@ $(document).ready(function(){
     })
 
     $('.help_form_floating .help_form_heading').on('click', function(){
+        $(this).children('svg').toggleClass('rotate');
         $(this).parent('.help_form_floating').toggleClass('position_form');
         $(this).parent().parent().parent('.help_form_area').toggleClass('overflow_unset');
         

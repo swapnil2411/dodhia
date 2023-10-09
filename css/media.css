@@ -17,6 +17,10 @@
         margin: 0 auto;
     }
 
+    .ipr_tech_banner_area h2{
+        left: 10%;
+    }
+
     .banner_area .banner_wave{
         position: absolute;
         bottom: -280px;
@@ -182,7 +186,9 @@
 
     .service_row .service_content h3,
     .innovate_flex .innovate_content h2,
-    .page_header{
+    .page_header,
+    .ipr_application_area .grid .right_product_desc .product_desc_panel h2,
+.ipr_application_area_header{
         font-size: 40px;
         line-height: 44px;
     }
@@ -214,6 +220,20 @@
 
     .recycling_certifications_flex{
         max-width: 100%;
+    }
+
+    .rigt_nanotech_banner h2{
+        font-size: 76px;
+        line-height: 64px;
+    }
+
+    .rigt_nanotech_banner h2 span{
+        font-size: 54px;
+    }
+
+    .ipr_tech_banner_area h2{
+        font-size: 56px;
+        line-height: 66px;
     }
 }
 
@@ -286,7 +306,9 @@
     .research_development_flex .research_dev_bottom_section .middle_text_container p,
     .main_footer_area .footer_column .footer_header h3,
     .our_recycling_products_flex .recycling_products_container .recycling_product_box .recycling_product_txt h2,
-    .certfication_line{
+    .certfication_line,
+    .nanotech_intro_area p,
+    .nanotech_intro_area ul li{
         font-size: 20px;
         line-height: 25px;
     }
@@ -305,7 +327,8 @@
     }
 
     .our_business_area .sec_header .title,
-    .sec_header .title{
+    .sec_header .title,
+    .nanotech_intro_area h2{
         font-size: 40px;
         line-height: 47px;
     }
@@ -390,6 +413,7 @@
         position: absolute;
         flex: 0 0 100%;
         max-width: 100%;
+        padding-top: 0;
     }
 
     .research_development_flex .research_dev_top_section .top_sec_para, 
@@ -451,7 +475,9 @@
 
     .service_row .service_content h3,
     .innovate_flex .innovate_content h2
-    .page_header{
+    .page_header,
+    .ipr_application_area .grid .right_product_desc .product_desc_panel h2,
+.ipr_application_area_header{
         font-size: 32px;
         line-height: 36px;
     }
@@ -578,6 +604,31 @@
     font-size: 28px;
 }
 
+.rigt_nanotech_banner h2{
+    font-size: 56px;
+    line-height: 44px;
+}
+
+.rigt_nanotech_banner h2 span{
+    font-size: 34px;
+}
+
+.ipr_tech_banner_area h2{
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.ipr_tech_banner_area img{
+    max-width: 100%;
+}
+
+.ipr_application_area .grid .right_product_desc .product_desc_panel,
+    .ipr_application_area .grid .right_product_desc .product_desc_panel.active{
+        flex-direction: unset !important;
+    }
+    
+
+
 }
 
 
@@ -623,13 +674,16 @@
     .research_development_flex .research_dev_bottom_section .middle_text_container p,
     .main_footer_area .footer_column .footer_header h3,
     .our_recycling_products_flex .recycling_products_container .recycling_product_box .recycling_product_txt h2,
-    .certfication_line {
+    .certfication_line,
+    .nanotech_intro_area p,
+.nanotech_intro_area ul li {
         font-size: 18px;
         line-height: 22px;
     }
 
     .our_business_area .sec_header .title,
-    .sec_header .title{
+    .sec_header .title,
+    .nanotech_intro_area h2{
         font-size: 32px;
         line-height: 39px;
     }
@@ -1076,6 +1130,31 @@
     .chemical_banner_middle_img{
         max-width: 90%;
     }
+
+    .left_nanotech_banner,
+    .rigt_nanotech_banner{
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .left_nanotech_banner{
+        margin-bottom: 50px;
+    }
+
+    .ipr_tech_banner_area h2{
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+        left: 0;
+        padding: 0 15px;
+    }
+
+    .ipr_application_area .grid .right_product_desc .product_desc_panel{
+        padding: 30px 0;
+    }
+
+    
 }
 
 @media (max-width: 600px){
@@ -1290,6 +1369,21 @@
     .small_recycle_process_four{
         padding: 150px 0;
     }
+
+    .rigt_nanotech_banner h2{
+        font-size: 48px;
+        line-height: 38px;
+    }
+    
+    .rigt_nanotech_banner h2 span{
+        font-size: 28px;
+    }
+
+    .ipr_tech_banner_area h2{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    
 }
 
 @media (max-width: 480px){

@@ -217,6 +217,7 @@ header.sticky.plastic_recycle_header{
     color: var(--black-color);
     display: block;
     padding: 30px 0;
+    text-transform: uppercase;
 }
 
 .main_navbar .right_navbar nav ul li a.white_links{
@@ -1703,6 +1704,22 @@ footer{
     font-size: 18px;
 }
 
+.map_market_btn .open_txt .close_line{
+    display: none;
+}
+
+.map_market_btn .open_txt .open_line{
+    display: inline-block;
+}
+
+.map_market_btn .open_txt.show_closeline .close_line{
+    display: inline-block;
+}
+
+.map_market_btn .open_txt.show_closeline .open_line{
+    display: none;
+}
+
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none){
     .market_loction_world {
         -webkit-backdrop-filter: blur(10px);
@@ -1864,6 +1881,11 @@ footer{
     cursor: pointer;
     margin-top: 0.625vw;
     transform: rotate(-90deg);
+    transition: 0.5s ease-in-out all;
+}
+
+.open_market_list.close_market_list{
+    transform: rotate(-180deg);
 }
 
 .open_market_list svg{
@@ -1902,7 +1924,7 @@ footer{
 
 /* Product CSS */
 .product_banner_area{
-    padding: 169px 0 157px;
+    padding: 306px 0 206px;
     background: url('../img/product_banner_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -2197,7 +2219,7 @@ footer{
 
    /* Sector CSS */
    .sector_banner_area{
-    padding: 169px 0 157px;
+    padding: 306px 0 206px;
     background: url('../img/sector_banner_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -2299,6 +2321,11 @@ footer{
     .help_form_floating .help_form_heading svg{
         font-size: 24px;
         color: var(--white);
+        transition: 0.5s ease-in-out all;
+    }
+
+    .help_form_floating .help_form_heading svg.rotate{
+        transform: rotate(180deg);
     }
 
     .help_form_floating .help_form_heading span{
@@ -3466,9 +3493,10 @@ footer{
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-justify-content: center;
+    /* -webkit-justify-content: center;
     -webkit-box-pack: center;
-    justify-content: center;
+    justify-content: center; */
+    padding-top: 60px;
     -webkit-align-items: center;
     -webkit-box-align: center;
     align-items: center;
@@ -3732,7 +3760,7 @@ footer{
     background: url('../img/chemical_product_banner.png');
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 206px 0;
+    padding: 306px 0 206px;
 }
 
 .chemical_product_listing_area{
@@ -3806,8 +3834,16 @@ footer{
 
 /* Service Pages CSS */
 .service_banner_area{
-    padding: 206px 0;
+    padding: 306px 0 206px;
     background: url('../img/chemical_service_banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.chemical_sector_banner{
+    padding: 306px 0 206px;
+    background: url('../img/chemical_sector_banner.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -4798,3 +4834,136 @@ footer{
     position: relative;
     z-index: -1;
 }
+
+/* Nonotechnology CSS */
+
+.nanotech_banner_area{
+    padding: 160px 0 100px;
+}
+
+.nanotech_banner_flex{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.left_nanotech_banner{
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+.left_nanotech_banner img,
+.right_nanotech_banner img{
+    max-width: 100%;
+}
+
+
+.rigt_nanotech_banner{
+    flex: 0 0 60%;
+    max-width: 60%;
+    text-align: center;
+}
+
+
+.rigt_nanotech_banner h2{
+    font-size: 96px;
+    color: var(--red-font);
+    line-height: 74px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.rigt_nanotech_banner h2 span{
+    font-size: 64px;
+    color: var(--black-color);
+}
+
+.nanotech_intro_area{
+    padding-bottom: 150px;
+}
+
+.nanotech_intro_area p,
+.nanotech_intro_area ul li{
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.nanotech_intro_area h2{
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 700;
+    margin: 60px 0 30px;
+    text-align: center;
+}
+
+.nanotech_intro_area ul li{
+    text-align: left;
+    list-style: disc;
+}
+
+.nanotech_intro_area ul{
+    padding-left: 24px;
+}
+
+.ipr_tech_banner_area{
+    height: 100vh;
+}
+
+
+
+.ipr_tech_banner_area img{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ipr_tech_banner_area h2{
+    font-size: 64px;
+    line-height: 74px;
+    font-weight: 700;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.ipr_application_area{
+    padding-bottom: 500px;
+}
+
+.ipr_application_area .grid .right_product_desc .product_desc_panel{
+    background: var(--white);
+    padding: 0;
+}
+
+.ipr_application_area .grid .right_product_desc .product_desc_panel h2{
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.ipr_application_area .grid .right_product_desc .product_desc_panel p{
+    line-height: 25px;
+}
+
+.ipr_application_area_header{
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 700;
+    margin-bottom: 65px;
+}
+
