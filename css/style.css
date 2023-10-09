@@ -1237,6 +1237,9 @@ footer{
     -webkit-align-items: center;
     -webkit-box-align: center;
     align-items: center;
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
     margin-bottom: 90px;
     position: relative;
 }
@@ -1270,10 +1273,10 @@ footer{
 .textile_stat_flex .textile_stat .box_boder_top{
     content: '';
     top: 40%;
-    width: calc(100% - 40px);
+    width: 70%;
     height: 3px;
     background: var(--red-font);
-    left: 40px;
+    left: 30%;
     z-index: -1;
     transition: 0.3s ease-in all;
     transform: scale(0);
@@ -1304,11 +1307,11 @@ footer{
 
 .textile_stat_flex .textile_stat .box_boder_bottom{
     content: '';
-    top: calc(100% + 20px);
-    width: calc(100% - 40px);
+    top: calc(100% + 18px);
+    width: 70%;
     height: 3px;
     background: var(--red-font);
-    left: 40px;
+    left: 30%;
     z-index: -1;
     transition: 0.3s ease-in all;
     transition-delay: 0.6s;
@@ -1326,7 +1329,7 @@ footer{
     width: 3px;
     height: 70px;
     background: var(--red-font);
-    left: 40px;
+    left: 30%;
     z-index: -1;
     transition: 0.3s ease-in all;
     transition-delay: 0.9s;
