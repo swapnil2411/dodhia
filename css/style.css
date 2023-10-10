@@ -4293,6 +4293,7 @@ footer{
     transform: translateY(-50%);
     right: 3.5%;
     opacity: 0;
+    z-index: 3;
 }
 
 
@@ -4317,7 +4318,7 @@ footer{
 
 .plastic_recycle_stepfive_area .step_five_content{
     position: absolute;
-    top: 70%;
+    top: 40%;
     transform: translateY(-50%);
     z-index: 2;
     opacity: 0;
@@ -4339,46 +4340,59 @@ footer{
     opacity: 0;
 }
 
+/* Process Five End */
+
+/* Process Six Start */
+
 .plastic_recycle_stepsix_area{
     height: 100vh;
     position: relative;
 }
 
 .plastic_recycle_stepsix_area .step_six_content{
-    transform: translateY(40vh);
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    right: 3.5%;
     opacity: 0;
-    transition: 0.5s ease-in-out all;
+    z-index: 3;
+    /* transform: translateY(40vh);
+    opacity: 0;
+    transition: 0.5s ease-in-out all; */
 }
-
-
-
-
 
 
 .reuse_bottle{
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     left: 5vw;
+    opacity: 1;
+    /* left: 5vw;
     top: 50%;
     transform: translateY(-50%);
     opacity: 0;
-    transition: 0.5s ease-in-out all;
+    transition: 0.5s ease-in-out all; */
 }
 
-/* .resue_bottle_02{
-    left: 15vw;
+.reuse_bottle_02{
+    left: calc(6vw + 128px);
 }
 
-.resue_bottle_03{
-    left: 25vw;
-} */
+.reuse_bottle_03{
+    left: calc(7vw + 256px);
+}
 
 .step_six_img_area{
     height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
+    transform: translateX(-50%);
     transition: 0.5s;
 }
+
+/* Process Six End */
 
 .our_recycling_products_flex{
     display: -webkit-box;

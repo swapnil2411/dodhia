@@ -234,7 +234,7 @@
         <!-- Plasctic Reacycle step five area end -->
 
         <!-- Plasctic Reacycle step five area start -->
-        <!-- <section class="plastic_recycle_stepsix_area">
+        <section class="plastic_recycle_stepsix_area">
             <div class="content_container">
                 <div class="step_six_content">
                     <p>Step 6</p>
@@ -248,7 +248,7 @@
                     <img src="img/plastic_recycle/resue_bottle.png" alt="" class="reuse_bottle reuse_bottle_03">
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- Plasctic Reacycle step five area end -->
 
     </section>
@@ -1000,13 +1000,13 @@ processFour.to(".crushing_crystal", {
             })
 
             processFive.to(".step_five_content", {
-                top: "60%",
+                top: "35%",
                 opacity: 0.5,
                 duration: 1000,
             })
 
             processFive.to(".step_five_content", {
-                top: "50%",
+                top: "30%",
                 opacity: 1,
                 duration: 1000,
             })
@@ -1017,7 +1017,7 @@ processFour.to(".crushing_crystal", {
             })
 
             processFive.to(".step_five_content", {
-                top: "40%",
+                top: "25%",
                 duration: 1000,
             })
 
@@ -1032,9 +1032,9 @@ processFour.to(".crushing_crystal", {
             })
 
             processFive.to(".step_five_content", {
-                top: "30%",
+                top: "-20vh",
                 duration: 1000,
-            })
+            }, "img_text_disapper")
 
             processFive.to(".black_vector_03", {
                 top: "-40vh",
@@ -1044,6 +1044,69 @@ processFour.to(".crushing_crystal", {
             processFive.to(".melting_machine", {
                 top: "-40vh",
                 duration: 2000,
+            }, "img_text_disapper")
+
+            let processSix = gsap.timeline({    
+                scrollTrigger:{
+                    trigger: ".plastic_recycle_stepsix_area",
+                    markers: true,
+                    start: "10% 10%",
+                    end: "120% 50%",
+                    scrub: true,
+                    pin: true,
+                }
+            })
+
+            processSix.to(".step_six_content", {
+                top: "50%",
+                opacity: 0.3,
+                duration: 2000,
+            })
+
+            processSix.to(".step_six_content", {
+                top: "40%",
+                opacity: 0.7,
+                duration: 2000,
+            })
+
+            processSix.to(".step_six_content", {
+                top: "30%",
+                opacity: 1,
+                duration: 2000,
+            })
+
+            processSix.from(".reuse_bottle_01",{
+                left: 0,
+                opacity: 0,
+                duration: 2000,
+            })
+
+            processSix.from(".reuse_bottle_02",{
+                left: "5vw",
+                opacity: 0,
+                duration: 2000,
+            })
+
+            processSix.from(".reuse_bottle_03",{
+                left: "13vw",
+                opacity: 0,
+                duration: 2000,
+            })
+
+            processSix.to(".step_six_content", {
+                top: "20%",
+                duration: 2000,
+            })
+
+            processSix.to(".step_six_img_area", {
+                left: "20%",
+                duration: 5000,
+            })
+
+            processSix.to(".step_six_img_area", {
+                scale: 2,
+                opacity: 0.5,
+                duration: 5000,
             })
 
 

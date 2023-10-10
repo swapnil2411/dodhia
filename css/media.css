@@ -1066,7 +1066,7 @@
     .plastic_recycle_stepthree_area .step_three_content h3,
     .plastic_recycle_stepfour_area .step_four_content h3,
     .plastic_recycle_stepfive_area .step_five_content h3,
-    .plastic_recycle_stepsix_area .step_three_content h3{
+    .plastic_recycle_stepsix_area .step_six_content h3{
         font-size: 55px;
     }
 
@@ -1075,7 +1075,7 @@
     .plastic_recycle_stepthree_area .step_three_content p,
     .plastic_recycle_stepfour_area .step_four_content p,
     .plastic_recycle_stepfive_area .step_five_content p,
-    .plastic_recycle_stepsix_area .step_three_content p{
+    .plastic_recycle_stepsix_area .step_six_content p{
         font-size: 20px;
         line-height: 30px;
     }
@@ -1477,9 +1477,31 @@
     .plastic_recycle_stepthree_area .step_three_content p br,
     .plastic_recycle_stepfour_area .step_four_content p br,
     .plastic_recycle_stepfive_area .step_five_content p br,
-    .plastic_recycle_stepsix_area .step_three_content p br{
+    .plastic_recycle_stepsix_area .step_six_content p br{
         display: none;
     }
+
+    .plastic_recycle_stepfour_area .step_four_img_area .washing_img_02{
+        max-width: 500px;
+    }
+
+    .melting_machine{
+        top: 40%
+    }
+
+    .reuse_bottle{
+        top: 60%;
+        max-width: 80px;
+    }
+
+    .reuse_bottle_02{
+        left: calc(5vw + 80px);
+    }
+    
+    .reuse_bottle_03{
+        left: calc(6vw + 160px);
+    }
+    
     
 }
 
