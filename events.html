@@ -171,14 +171,15 @@
     <!-- Dodhia Events Area End -->
 
     <!-- Dodhia Past Events Area Start -->
-    <div class="content_container ptb-95 pb-0">
-        <div class="sec_header">
-            <h3 class="title">
-                Past <span class="red_txt">Events</span>
-            </h3>
-        </div>
-    </div>
+    
     <section class="dodhia_past_events ptb-95 pt-0">
+        <div class="content_container ptb-95">
+            <div class="sec_header">
+                <h3 class="title">
+                    Past <span class="red_txt">Events</span>
+                </h3>
+            </div>
+        </div>
         <div class="past_events_slider owl-carousel owl-theme">
             <div class="item">
                 <img src="img/post_event_01.png" alt="Past Event" class="img-fluid">
@@ -357,6 +358,79 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/jquery.countup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        const sectionOneTl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".dodhia_events_area",
+                    start: "top 50%",
+                    end: "bottom 40%",
+                    scrub: 2,
+                    toggleClass: {
+                        targets: ".dodhia_events_area",
+                        className: "active"
+                    },
+                    toggleActions: "play none none none"
+                },
+                ease: Sine.easeNone
+            });
+            sectionOneTl.addLabel("start").from(".dodhia_events_area .sec_header", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).from(".dodhia_events_area .dodhia_events_list", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).addLabel("end")
+
+            const sectionOneT2 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".dodhia_past_events",
+                    start: "top 50%",
+                    end: "bottom 40%",
+                    scrub: 2,
+                    toggleClass: {
+                        targets: ".dodhia_past_events",
+                        className: "active"
+                    },
+                    toggleActions: "play none none none"
+                },
+                ease: Sine.easeNone
+            });
+            sectionOneT2.addLabel("start").from(".dodhia_past_events .sec_header", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).from(".dodhia_past_events .past_events_slider", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).addLabel("end")
+
+    </script>
 </body>
 </html>

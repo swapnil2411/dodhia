@@ -634,6 +634,194 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/jquery.countup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        const sectionOneTl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".about_group_area",
+                    start: "top 50%",
+                    end: "bottom 40%",
+                    scrub: 2,
+                    toggleClass: {
+                        targets: ".about_group_area",
+                        className: "active"
+                    },
+                    toggleActions: "play none none none"
+                },
+                ease: Sine.easeNone
+            });
+            sectionOneTl.addLabel("start").from(".about_group_area .about_group_content", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).from(".about_group_area .right_about_group", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).addLabel("end")
+
+            const sectionOneT2 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".about_timeline_area",
+                    start: "top 50%",
+                    end: "bottom 40%",
+                    scrub: 2,
+                    toggleClass: {
+                        targets: ".about_timeline_area",
+                        className: "active"
+                    },
+                    toggleActions: "play none none none"
+                },
+                ease: Sine.easeNone
+            });
+            sectionOneT2.addLabel("start").from(".about_timeline_area .sec_header", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).from(".about_timeline_area .timeline_wrapper", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).addLabel("end")
+            
+
+            const sectionOneT3 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".about_us_team_area",
+                    start: "top 50%",
+                    end: "bottom 40%",
+                    scrub: 2,
+                    toggleClass: {
+                        targets: ".about_us_team_area",
+                        className: "active"
+                    },
+                    toggleActions: "play none none none"
+                },
+                ease: Sine.easeNone
+            });
+            sectionOneT3.addLabel("start").from(".about_us_team_area .sec_header", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).from(".about_us_team_area .team_member_grid", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).addLabel("end")
+
+            const sectionOneT4 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".awards_accreditations_area",
+                    start: "top 50%",
+                    end: "bottom 40%",
+                    scrub: 2,
+                    toggleClass: {
+                        targets: ".awards_accreditations_area",
+                        className: "active"
+                    },
+                    toggleActions: "play none none none"
+                },
+                ease: Sine.easeNone
+            });
+            sectionOneT4.addLabel("start").from(".awards_accreditations_area .sec_header", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).from(".awards_accreditations_area .awards_accrediation_flex", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).addLabel("end")
+            
+
+            const sectionOneT5 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".csr_sustainability_area",
+                    start: "top 50%",
+                    end: "bottom 40%",
+                    scrub: 2,
+                    toggleClass: {
+                        targets: ".csr_sustainability_area",
+                        className: "active"
+                    },
+                    toggleActions: "play none none none"
+                },
+                ease: Sine.easeNone
+            });
+            sectionOneT5.addLabel("start").from(".csr_sustainability_area .sec_header", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).from(".csr_sustainability_area .csr_middle_content", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).from(".csr_sustainability_area .csr_grid", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).addLabel("end")
+            
+
+
+    </script>
 </body>
 </html>

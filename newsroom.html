@@ -91,7 +91,7 @@
     <!-- Newsroom Banner End -->
 
     <!-- Newsroom Listing Area Start -->
-    <section class="newsroom_content_area ptb-95 pt-20">
+    <section class="newsroom_content_area ptb-95">
         <div class="content_container">
             <div class="sec_header">
                 <p class="sub_title font-14 red_txt">Dhodia Newsroom</p>
@@ -351,6 +351,56 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/jquery.countup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        const sectionOneTl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".newsroom_content_area",
+                    start: "top 50%",
+                    end: "bottom 40%",
+                    scrub: 2,
+                    toggleClass: {
+                        targets: ".newsroom_content_area",
+                        className: "active"
+                    },
+                    toggleActions: "play none none none"
+                },
+                ease: Sine.easeNone
+            });
+            sectionOneTl.addLabel("start").from(".newsroom_content_area .sec_header", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).from(".newsroom_content_area .latest_news_container", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).from(".newsroom_content_area .new_column", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).addLabel("end")
+
+            
+
+    </script>
 </body>
 </html>

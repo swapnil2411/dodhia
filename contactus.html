@@ -310,6 +310,53 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/jquery.countup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        const sectionOneTl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".contact_us_details_area",
+                    start: "top 50%",
+                    end: "bottom 40%",
+                    scrub: 2,
+                    toggleClass: {
+                        targets: ".contact_us_details_area",
+                        className: "active"
+                    },
+                    toggleActions: "play none none none"
+                },
+                ease: Sine.easeNone
+            });
+            sectionOneTl.addLabel("start").from(".contact_us_details_area .left_details_area", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).from(".contact_us_details_area .right_details_area", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).from(".contact_us_details_area .contact_form_area", {
+                delay: -0.6,
+                duration: .8,
+                y: 50,
+                opacity: 1,
+                ease: Sine.easeOut,
+                stagger: {
+                    amount: .2
+                }
+            }).addLabel("end")
+    </script>
 </body>
 </html>
